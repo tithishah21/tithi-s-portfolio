@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -61,7 +62,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'neon-pink': 'hsl(var(--neon-pink))',
+				'electric-blue': 'hsl(var(--electric-blue))',
+				'cyber-gray': 'hsl(var(--cyber-gray))'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-glow': 'var(--gradient-glow)',
+				'gradient-dark': 'var(--gradient-dark)'
+			},
+			boxShadow: {
+				'neon': 'var(--shadow-neon)',
+				'cyber': 'var(--shadow-cyber)',
+				'glow-intense': 'var(--glow-intense)'
+			},
+			fontFamily: {
+				'mono': ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
+				'cyber': ['Orbitron', 'Exo 2', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
