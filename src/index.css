@@ -18,21 +18,21 @@
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 95%;
 
-    /* Primary - Neon Pink */
-    --primary: 328 100% 54%;
-    --primary-foreground: 0 0% 5%;
-    --primary-glow: 328 100% 70%;
+    /* Primary - Neon Blue */
+    --primary: 220 100% 50%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 220 100% 65%;
 
-    /* Secondary - Electric Blue */
-    --secondary: 180 100% 50%;
-    --secondary-foreground: 0 0% 5%;
+    /* Secondary - Navy Blue */
+    --secondary: 220 50% 20%;
+    --secondary-foreground: 0 0% 98%;
 
     /* Muted Colors */
-    --muted: 0 0% 15%;
+    --muted: 220 20% 15%;
     --muted-foreground: 0 0% 65%;
 
-    /* Accent - Bright Cyan */
-    --accent: 180 100% 50%;
+    /* Accent - Electric Blue */
+    --accent: 200 100% 50%;
     --accent-foreground: 0 0% 5%;
 
     /* Destructive */
@@ -45,10 +45,10 @@
     --ring: 328 100% 54%;
 
     /* Custom Design Tokens */
-    --neon-pink: 328 100% 54%;
-    --electric-blue: 180 100% 50%;
+    --neon-blue: 220 100% 50%;
+    --electric-blue: 200 100% 50%;
     --deep-black: 0 0% 4%;
-    --cyber-gray: 0 0% 15%;
+    --navy-blue: 220 50% 20%;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));

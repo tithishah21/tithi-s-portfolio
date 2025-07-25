@@ -1,35 +1,8 @@
-import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Download, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
-import heroBackground from '@/assets/hero-background.jpg';
-import profileAvatar from '@/assets/profile-avatar.jpg';
 
 const Hero = () => {
-  const [typedText, setTypedText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const titles = [
-    'Full-Stack Developer',
-    'Computer Science Student',
-    'Problem Solver',
-    'Innovation Creator'
-  ];
-
-  useEffect(() => {
-    const currentTitle = titles[currentIndex];
-    if (typedText.length < currentTitle.length) {
-      const timeout = setTimeout(() => {
-        setTypedText(currentTitle.slice(0, typedText.length + 1));
-      }, 100);
-      return () => clearTimeout(timeout);
-    } else {
-      const timeout = setTimeout(() => {
-        setTypedText('');
-        setCurrentIndex((prev) => (prev + 1) % titles.length);
-      }, 2000);
-      return () => clearTimeout(timeout);
-    }
-  }, [typedText, currentIndex]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -41,16 +14,10 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen relative flex items-center justify-center overflow-hidden"
-      style={{
-        backgroundImage: `url(${heroBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
+      className="min-h-screen relative flex items-center justify-center overflow-hidden bg-background"
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-background/70 backdrop-blur-sm"></div>
+      {/* Subtle gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-dark opacity-50"></div>
       
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-2 h-2 bg-primary rounded-full animate-pulse-glow"></div>
@@ -60,10 +27,10 @@ const Hero = () => {
 
       {/* Main Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col items-center text-center animate-slide-up">
           
           {/* Text Content */}
-          <div className="text-center lg:text-left animate-slide-up">
+          <div className="max-w-4xl">
             <div className="mb-6">
               <Badge className="bg-primary/20 text-primary border-primary/30 hover:bg-primary/30 transition-colors">
                 <MapPin className="h-3 w-3 mr-1" />
@@ -73,25 +40,23 @@ const Hero = () => {
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="block text-foreground">Hi, I'm</span>
-              <span className="block cyber-text glitch" data-text="TITHI SHAH">
+              <span className="block cyber-text">
                 TITHI SHAH
               </span>
             </h1>
             
-            <div className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 h-12">
-              <span className="text-muted-foreground">I'm a </span>
-              <span className="cyber-text">{typedText}</span>
-              <span className="animate-pulse">|</span>
+            <div className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6">
+              <span className="text-muted-foreground">Full-Stack Developer & Computer Science Student</span>
             </div>
             
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-8 max-w-3xl leading-relaxed mx-auto">
               Transforming innovative ideas into tangible solutions that drive meaningful progress. 
               Passionate about harnessing technology to elevate our daily lives and create smarter, 
               more efficient digital experiences.
             </p>
             
             {/* Contact Info */}
-            <div className="flex flex-wrap items-center gap-4 mb-8 text-sm text-muted-foreground">
+            <div className="flex flex-wrap items-center justify-center gap-6 mb-8 text-sm text-muted-foreground">
               <a 
                 href="tel:+918780358139" 
                 className="flex items-center gap-2 hover:text-primary transition-colors"
@@ -109,7 +74,7 @@ const Hero = () => {
             </div>
             
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-4 mb-8">
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button 
                 size="lg" 
                 className="cyber-button bg-gradient-primary hover:shadow-neon transition-all duration-300"
@@ -130,7 +95,7 @@ const Hero = () => {
             </div>
             
             {/* Social Links */}
-            <div className="flex gap-4">
+            <div className="flex justify-center gap-4">
               <Button variant="ghost" size="sm" className="hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />
               </Button>
@@ -140,41 +105,6 @@ const Hero = () => {
               <Button variant="ghost" size="sm" className="hover:text-primary transition-colors">
                 <Mail className="h-5 w-5" />
               </Button>
-            </div>
-          </div>
-          
-          {/* Profile Image */}
-          <div className="flex justify-center lg:justify-end animate-slide-up">
-            <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-cyber animate-pulse-glow">
-                <img 
-                  src={profileAvatar} 
-                  alt="Tithi Shah" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              
-              {/* Floating Tech Stack Badges */}
-              <div className="absolute -top-4 -right-4 animate-float">
-                <Badge className="bg-secondary/20 text-secondary border-secondary/30">
-                  React
-                </Badge>
-              </div>
-              <div className="absolute top-16 -left-8 animate-float" style={{ animationDelay: '1s' }}>
-                <Badge className="bg-primary/20 text-primary border-primary/30">
-                  TypeScript
-                </Badge>
-              </div>
-              <div className="absolute -bottom-4 -left-4 animate-float" style={{ animationDelay: '2s' }}>
-                <Badge className="bg-accent/20 text-accent border-accent/30">
-                  Next.js
-                </Badge>
-              </div>
-              <div className="absolute bottom-16 -right-8 animate-float" style={{ animationDelay: '3s' }}>
-                <Badge className="bg-primary-glow/20 text-primary-glow border-primary-glow/30">
-                  Node.js
-                </Badge>
-              </div>
             </div>
           </div>
         </div>

@@ -63,9 +63,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'neon-pink': 'hsl(var(--neon-pink))',
+				'neon-blue': 'hsl(var(--neon-blue))',
 				'electric-blue': 'hsl(var(--electric-blue))',
-				'cyber-gray': 'hsl(var(--cyber-gray))'
+				'navy-blue': 'hsl(var(--navy-blue))'
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
