@@ -47,7 +47,7 @@ const Footer = () => {
           {/* About Section */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <h3 className="text-2xl font-bold cyber-text mb-4">TITHI.DEV</h3>
+              <h3 className="text-2xl font-bold cyber-text mb-4">Tithi's portfolio</h3>
               <p className="text-muted-foreground leading-relaxed max-w-md">
                 Full-Stack Developer & Computer Science Engineering student passionate about 
                 transforming innovative ideas into meaningful technological solutions.

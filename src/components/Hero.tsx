@@ -112,15 +112,16 @@ const Hero = () => (
       </div>
       <div className="flex justify-center md:justify-start w-full mb-4">
         <a
-          href="/TithiShah_Resume.pdf" // ← make sure this file exists in your `public/` directory
+          href="/TithiShah_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="cyber-button border border-blue-400 hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-40 py-3 rounded-lg font-semibold text-white shadow-md"
+          className="cyber-button border border-blue-400 hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-6 md:px-40 py-3 rounded-lg font-semibold text-white shadow-md text-center"
         >
           <Download className="inline-block mr-2 w-5 h-5" />
           Download Resume
         </a>
       </div>
+
 
       <StatsPanel />
     </div>
@@ -130,7 +131,7 @@ const Hero = () => (
     </div>
     {/* Scroll Indicator */}
     <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-      <span className="scroll-hint-text">Scroll to explore <span className="scroll-arrow">→</span></span>
+      <span className="scroll-hint-text">Scroll to explore <span className="scroll-arrow"></span></span>
     </div>
   </section>
 );

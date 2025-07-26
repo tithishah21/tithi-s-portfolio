@@ -14,7 +14,7 @@ const Projects = () => {
       title: "ResumeBuilderPro",
       subtitle: "AI-Powered Resume Creation Platform",
       category: "full-stack",
-      status: "Professional full stack Project",
+      status: "Professional Project",
       image: resumeBuilderMockup,
       description: "A comprehensive full-stack resume builder featuring AI-powered interview preparation. Built during SDE internship at Intelivita Pvt. Ltd.",
       features: [
@@ -29,7 +29,7 @@ const Projects = () => {
       links: [
         { name: "Live Preview", url: "https://resume-builder-project-flame.vercel.app", icon: ExternalLink }
       ],
-      highlights: ["AI Integration", "Full-Stack", "Professional"]
+      highlights: ["AI Integration", "Full-Stack"]
     },
     {
       title: "NGO Support Platform",
@@ -183,7 +183,7 @@ const Projects = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg" style={{textShadow: '0 0 12px #3b82f6, 0 2px 8px #000'}}>
-            Featured Projects
+            Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -209,24 +209,28 @@ const Projects = () => {
         </div>
 
         {/* Project Categories */}
-        <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="mb-12">
-          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 bg-card border border-primary/20">
-            {categories.map((category) => (
-              <TabsTrigger 
-                key={category.id} 
-                value={category.id}
-                className="data-[state=active]:bg-primary/20 data-[state=active]:text-primary"
-              >
-                <span className="hidden sm:inline">{category.name}</span>
-                <span className="sm:hidden">{category.name.split('/')[0]}</span>
-                <Badge className="ml-2 bg-primary/20 text-primary text-xs">
-                  {category.count}
-                </Badge>
-              </TabsTrigger>
-            ))}
-          </TabsList>
+        <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="mt-28 lg:mt-0 md:mt-0 mb-12">
+        <TabsList className="w-full flex flex-col md:flex-row items-center md:justify-center gap-[0.3rem] bg-transparent p-0 border-none shadow-none">
+  {/* All categories in one row for md+ screens */}
+  <div className="flex justify-center gap-2 flex-wrap bg-[#0d0d0d] px-4 py-3 rounded-xl w-full md:w-auto">
+    {categories.map((category) => (
+      <TabsTrigger 
+        key={category.id} 
+        value={category.id}
+        className="px-4 py-2 rounded-md text-sm font-mono data-[state=active]:bg-primary/20 data-[state=active]:text-primary text-white"
+      >
+        {category.name}
+        <Badge className="ml-2 bg-primary/20 text-primary text-xs">{category.count}</Badge>
+      </TabsTrigger>
+    ))}
+  </div>
+</TabsList>
 
-          <TabsContent value={selectedCategory} className="mt-8">
+
+
+
+
+          <TabsContent value={selectedCategory} className="mt-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {filteredProjects.map((project, index) => (
                 <Card 
