@@ -93,20 +93,17 @@ const Experience = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="cyber-text">Experience</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg" style={{textShadow: '0 0 12px #3b82f6, 0 2px 8px #000'}}>
+            Experience
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Professional journey showcasing leadership, technical expertise, and impactful contributions 
-            to innovative projects and community initiatives.
-          </p>
+          
         </div>
 
         {/* Professional Experience */}
         <div className="space-y-8 mb-16">
-          <h3 className="text-2xl font-semibold mb-8 text-center">
-            <span className="text-primary">Professional Experience</span>
+          <h3 className="text-2xl font-semibold mb-8 text-center text-white drop-shadow-lg" style={{textShadow: '0 0 8px #3b82f6, 0 2px 8px #000'}}>
+            Professional Experience
           </h3>
           
           {experiences.map((exp, index) => (
@@ -238,8 +235,8 @@ const Experience = () => {
 
         {/* Workshops & Community Involvement */}
         <div>
-          <h3 className="text-2xl font-semibold mb-8 text-center">
-            <span className="text-secondary">Workshops & Community Leadership</span>
+          <h3 className="text-2xl font-semibold mb-8 text-center text-white drop-shadow-lg" style={{textShadow: '0 0 8px #3b82f6, 0 2px 8px #000'}}>
+            Workshops & Community Leadership
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -43,7 +43,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('#home'); }}>
-              <span className="text-2xl font-bold cyber-text">TITHI.DEV</span>
+              <span className="text-2xl font-bold cyber-text">Tithi's portfolio</span>
             </a>
           </div>
 

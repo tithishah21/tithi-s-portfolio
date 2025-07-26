@@ -1,173 +1,85 @@
 import { Badge } from '@/components/ui/badge';
-import { Card, CardContent } from '@/components/ui/card';
-import { Code, Lightbulb, Users, Zap } from 'lucide-react';
+import { Code, Briefcase, GraduationCap, Trophy, UserCheck, Terminal } from 'lucide-react';
 
 const About = () => {
-  const highlights = [
-    {
-      icon: Code,
-      title: "Full-Stack Development",
-      description: "Expertise in modern web technologies with focus on React, Next.js, and TypeScript"
-    },
-    {
-      icon: Lightbulb,
-      title: "Innovation-Driven",
-      description: "Passionate about transforming ideas into practical solutions that make a difference"
-    },
-    {
-      icon: Users,
-      title: "Leadership & Collaboration",
-      description: "Active community member with proven leadership skills in tech organizations"
-    },
-    {
-      icon: Zap,
-      title: "Performance Focus",
-      description: "Committed to building efficient, scalable solutions with exceptional user experiences"
-    }
-  ];
-
   const skills = [
     { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript"] },
     { category: "Backend", items: ["Node.js", "Python", "Java", "SQL", "Supabase"] },
     { category: "Tools", items: ["Git", "Vercel", "Firebase", "ESLint", "MLFlow"] },
-    { category: "Concepts", items: ["Machine Learning", "Full-Stack Architecture", "UI/UX Design"] }
+    { category: "Concepts", items: ["Machine Learning", "Full-Stack Web Development", "System Design","UI/UX Design"] }
+  ];
+
+  const highlights = [
+    {
+      icon: Trophy,
+      title: "Hackathon Winner",
+      description: "Winner of Code4Change 2.0 Hackathon, held during Yantra 2025 at VIT Vellore for building 'PrepMate' - an AI-powered exam prep tool."
+    },
+    {
+      icon: Terminal,
+      title: "Shortlisted for J.P. Morgan Chase's prestigious Code for Good Hackathon 2025,selected among the top 255 candidates out of 50,000+ applicants.",
+      description: "Selected to participate in the hackathon to develop tech solutions for social good alongside top engineering talented across India."
+    },
+    {
+      icon: Briefcase,
+      title: "SDE Intern @ Intelivita",
+      description: "Worked on full-stack, responsive ResumeBuilderPro platform with AI Interview Chatbot & dynamic UI using Next.js, TypeScript, and Tailwind CSS with Supabase for authentication and data storage."
+    },
+    {
+      icon: GraduationCap,
+      title: "CSE @ VIT Vellore",
+      description: "Pre-final year student,pursuing CSE Core at Vellore Institute of Technology ,Vellore campus with CGPA of 8.9."
+    },
+    {
+      icon: UserCheck,
+      title: "Conducted Prompt Engineering Workshop for 80+ VITians at IEEE-CS.",
+      description: "The session covered key prompting techniques like zero-shot, few-shot, and chain-of-thought prompting, along with real-world developer tools.Participants learned how to craft effective prompts to unlock the true potential of generative Al.The event aimed to equip students with practical skills to responsibly integrate Al into their coding workflows."
+    }
   ];
 
   return (
-    <section id="about" className="py-20 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+    <section id="about" className="py-20 relative bg-gradient-radial from-blue-950 via-blue-900 to-blue-950">
+      <div className="absolute inset-0 pointer-events-none z-0" style={{ background: 'radial-gradient(circle at 60% 40%, rgba(59,130,246,0.18) 0%, rgba(30,41,59,0.9) 80%)' }}></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="cyber-text">About Me</span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Computer Science Engineering student passionate about creating innovative solutions 
-            that bridge the gap between complex technology and everyday user needs.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg" style={{ textShadow: '0 0 12px #3b82f6, 0 2px 8px #000' }}>About Me</h2>
+          
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          
-          {/* Personal Story */}
-          <div className="space-y-6">
-            <Card className="cyber-button border-primary/20 hover:border-primary/40 transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-4 cyber-text">My Journey</h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  I'm deeply passionate about harnessing technology to elevate our daily lives, 
-                  making processes smarter, more efficient, and seamlessly integrated. Currently 
-                  pursuing Computer Science Engineering at VIT Vellore with a CGPA of 8.9, 
-                  I've been recognized for academic excellence and innovative problem-solving.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  My ambition is to transform innovative ideas into tangible solutions that 
-                  drive meaningful progress. With a strong foundation in strategic communication 
-                  and project management, I thrive on solving real-world challenges and 
-                  delivering results that matter.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  From winning hackathons to being selected among the top 250 candidates from 
-                  50,000+ applicants for J.P. Morgan's Code for Good Hackathon, I'm committed 
-                  to pushing the boundaries of what's possible in technology.
-                </p>
-              </CardContent>
-            </Card>
+        {/* Highlights Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
+          {highlights.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <div key={index} className="bg-black/80 border border-blue-400/20 rounded-xl p-6 shadow-md hover:shadow-blue-400/30 hover:scale-105 transition-all duration-300 cursor-pointer">
+                <div className="flex items-center gap-3 mb-4">
+                  <Icon className="text-blue-400 w-6 h-6" />
+                  <h4 className="text-white font-semibold text-md">{item.title}</h4>
+                </div>
+                <p className="text-sm text-gray-300 leading-relaxed">{item.description}</p>
+              </div>
+            );
+          })}
+        </div>
 
-            {/* Academic Achievement */}
-            <Card className="cyber-button border-secondary/20 hover:border-secondary/40 transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-secondary">Academic Excellence</h3>
-                <div className="space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Current CGPA</span>
-                    <Badge className="bg-primary/20 text-primary border-primary/30">8.9 / 10</Badge>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">JEE Mains 2023</span>
-                    <Badge className="bg-secondary/20 text-secondary border-secondary/30">95 Percentile</Badge>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">CBSE XII Boards</span>
-                    <Badge className="bg-accent/20 text-accent border-accent/30">97.6%</Badge>
+        {/* Technical Skills Card */}
+        <div className="cyber-button border-accent/20 hover:border-blue-400 transition-all duration-300 rounded-xl bg-black/80 shadow-md hover:scale-105 hover:shadow-blue-400/30 cursor-pointer">
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-4 text-accent drop-shadow">Technical Skills</h3>
+            <div className="space-y-4">
+              {skills.map((skillGroup, index) => (
+                <div key={index}>
+                  <h4 className="font-medium mb-2 text-sm text-gray-400 uppercase tracking-wider">{skillGroup.category}</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {skillGroup.items.map((skill, skillIndex) => (
+                      <span key={skillIndex} className="border border-blue-400/30 text-blue-400 bg-blue-950/40 rounded px-2 py-1 text-xs font-medium hover:bg-blue-400/10 hover:scale-105 transition-all duration-200 cursor-pointer shadow-sm">
+                        {skill}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Skills & Highlights */}
-          <div className="space-y-6">
-            
-            {/* Key Highlights */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {highlights.map((highlight, index) => {
-                const Icon = highlight.icon;
-                return (
-                  <Card 
-                    key={index} 
-                    className="cyber-button border-primary/20 hover:border-primary/40 transition-all duration-300 group"
-                  >
-                    <CardContent className="p-4 text-center">
-                      <Icon className="h-8 w-8 mx-auto mb-3 text-primary group-hover:text-primary-glow transition-colors" />
-                      <h4 className="font-semibold mb-2 text-sm">{highlight.title}</h4>
-                      <p className="text-xs text-muted-foreground leading-relaxed">
-                        {highlight.description}
-                      </p>
-                    </CardContent>
-                  </Card>
-                );
-              })}
+              ))}
             </div>
-
-            {/* Technical Skills */}
-            <Card className="cyber-button border-accent/20 hover:border-accent/40 transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-accent">Technical Skills</h3>
-                <div className="space-y-4">
-                  {skills.map((skillGroup, index) => (
-                    <div key={index}>
-                      <h4 className="font-medium mb-2 text-sm text-muted-foreground uppercase tracking-wider">
-                        {skillGroup.category}
-                      </h4>
-                      <div className="flex flex-wrap gap-2">
-                        {skillGroup.items.map((skill, skillIndex) => (
-                          <Badge 
-                            key={skillIndex}
-                            variant="outline"
-                            className="border-primary/30 text-primary hover:bg-primary/10 transition-colors"
-                          >
-                            {skill}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Languages */}
-            <Card className="cyber-button border-primary-glow/20 hover:border-primary-glow/40 transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-primary-glow">Languages</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span>English</span>
-                    <Badge className="bg-primary/20 text-primary">Professional</Badge>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Hindi</span>
-                    <Badge className="bg-secondary/20 text-secondary">Bilingual</Badge>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Gujarati</span>
-                    <Badge className="bg-accent/20 text-accent">Native</Badge>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

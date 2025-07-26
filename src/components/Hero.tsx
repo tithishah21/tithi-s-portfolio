@@ -1,123 +1,134 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Download, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Download, Github, Linkedin, Mail, MapPin, Phone, Rocket, Target, Briefcase } from 'lucide-react';
+import Particles from "react-tsparticles";
+import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
-const Hero = () => {
+const terminalLines = [
+  '> Initializing creativity...',
+  '> Deploying innovation...',
+  '> Building solutions...'
+];
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+const AnimatedTerminalPanel = () => {
+  const [currentLine, setCurrentLine] = useState(0);
+  const [displayedText, setDisplayedText] = useState('');
+  const [charIndex, setCharIndex] = useState(0);
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    if (charIndex < terminalLines[currentLine].length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText((prev) => prev + terminalLines[currentLine][charIndex]);
+        setCharIndex((prev) => prev + 1);
+      }, 45);
+      return () => clearTimeout(timeout);
+    } else {
+      const timeout = setTimeout(() => {
+        setCurrentLine((prev) => (prev + 1) % terminalLines.length);
+        setDisplayedText('');
+        setCharIndex(0);
+      }, 1200);
+      return () => clearTimeout(timeout);
     }
-  };
+  }, [charIndex, currentLine]);
+
+  useEffect(() => {
+    const cursorInterval = setInterval(() => setShowCursor((c) => !c), 500);
+    return () => clearInterval(cursorInterval);
+  }, []);
 
   return (
-    <section 
-      id="home" 
-      className="min-h-screen relative flex items-center justify-center overflow-hidden bg-background"
-    >
-      {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-dark opacity-50"></div>
-      
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-2 h-2 bg-primary rounded-full animate-pulse-glow"></div>
-      <div className="absolute top-40 right-20 w-3 h-3 bg-secondary rounded-full animate-float"></div>
-      <div className="absolute bottom-32 left-20 w-4 h-4 bg-accent rounded-full animate-pulse-glow"></div>
-      <div className="absolute bottom-20 right-10 w-2 h-2 bg-primary-glow rounded-full animate-float"></div>
-
-      {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center text-center animate-slide-up">
-          
-          {/* Text Content */}
-          <div className="max-w-4xl">
-            <div className="mb-6">
-              <Badge className="bg-primary/20 text-primary border-primary/30 hover:bg-primary/30 transition-colors">
-                <MapPin className="h-3 w-3 mr-1" />
-                Ahmedabad, Gujarat, India
-              </Badge>
-            </div>
-            
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="block text-foreground">Hi, I'm</span>
-              <span className="block cyber-text">
-                TITHI SHAH
-              </span>
-            </h1>
-            
-            <div className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6">
-              <span className="text-muted-foreground">Full-Stack Developer & Computer Science Student</span>
-            </div>
-            
-            <p className="text-lg text-muted-foreground mb-8 max-w-3xl leading-relaxed mx-auto">
-              Transforming innovative ideas into tangible solutions that drive meaningful progress. 
-              Passionate about harnessing technology to elevate our daily lives and create smarter, 
-              more efficient digital experiences.
-            </p>
-            
-            {/* Contact Info */}
-            <div className="flex flex-wrap items-center justify-center gap-6 mb-8 text-sm text-muted-foreground">
-              <a 
-                href="tel:+918780358139" 
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-              >
-                <Phone className="h-4 w-4" />
-                +91 8780358139
-              </a>
-              <a 
-                href="mailto:shahtithi21@gmail.com" 
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-              >
-                <Mail className="h-4 w-4" />
-                shahtithi21@gmail.com
-              </a>
-            </div>
-            
-            {/* Action Buttons */}
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <Button 
-                size="lg" 
-                className="cyber-button bg-gradient-primary hover:shadow-neon transition-all duration-300"
-                onClick={() => scrollToSection('contact')}
-              >
-                <Mail className="h-5 w-5 mr-2" />
-                Get In Touch
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="cyber-button hover:bg-primary/10"
-              >
-                <Download className="h-5 w-5 mr-2" />
-                Download Resume
-              </Button>
-            </div>
-            
-            {/* Social Links */}
-            <div className="flex justify-center gap-4">
-              <Button variant="ghost" size="sm" className="hover:text-primary transition-colors">
-                <Github className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="hover:text-primary transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="hover:text-primary transition-colors">
-                <Mail className="h-5 w-5" />
-              </Button>
-            </div>
-          </div>
-        </div>
+    <div className="glass-terminal w-full max-w-md mx-auto md:mx-0 mt-10 md:mt-0 rounded-xl shadow-lg border border-blue-400/30 bg-white/10 backdrop-blur-md">
+      <div className="flex items-center gap-2 px-4 pt-3 pb-1">
+        <span className="w-3 h-3 rounded-full bg-red-500 border border-red-700"></span>
+        <span className="w-3 h-3 rounded-full bg-yellow-400 border border-yellow-700"></span>
+        <span className="w-3 h-3 rounded-full bg-green-500 border border-green-700"></span>
       </div>
-      
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
-          <div className="w-1 h-2 bg-primary rounded-full mt-2 animate-pulse"></div>
-        </div>
+      <div className="px-6 pb-6 pt-2 font-mono text-gray-200 text-lg min-h-[70px] md:min-h-[90px] flex items-center" style={{textShadow: '0 0 8px #3b82f6, 0 0 2px #fff'}}>
+        {displayedText}
+        <span className={`ml-1 blink-cursor ${showCursor ? 'opacity-100' : 'opacity-0'}`}>|</span>
       </div>
-    </section>
+    </div>
   );
 };
+
+const stats = [
+  { icon: <Rocket className="text-blue-400 w-6 h-6 mb-1" />, label: 'Projects', value: 10, suffix: '+' },
+  { icon: <Target className="text-blue-400 w-6 h-6 mb-1" />, label: 'Hackathons', value: 6 },
+  { icon: <Briefcase className="text-blue-400 w-6 h-6 mb-1" />, label: 'Internships', value: 1 },
+  { icon: <Github className="text-blue-400 w-6 h-6 mb-1" />, label: 'Contributions', value: 450, suffix: '+' },
+];
+
+const AnimatedCounter = ({ to, duration = 1.2 }) => {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    let start = 0;
+    const end = to;
+    if (start === end) return;
+    let incrementTime = Math.abs(Math.floor((duration * 1000) / end));
+    let timer = setInterval(() => {
+      start += 1;
+      setCount(start);
+      if (start === end) clearInterval(timer);
+    }, incrementTime);
+    return () => clearInterval(timer);
+  }, [to, duration]);
+  return <span>{count}</span>;
+};
+
+const StatsPanel = () => (
+  <div className="mt-8 w-full flex justify-center">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-background/80 rounded-xl shadow-lg px-6 py-6 max-w-2xl mx-auto">
+      {stats.map((stat, idx) => (
+        <div key={stat.label} className="flex flex-col items-center">
+          {stat.icon}
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.2 * idx }}
+            className="text-2xl font-bold text-blue-400"
+          >
+            <AnimatedCounter to={stat.value} />{stat.suffix || ''}
+          </motion.div>
+          <span className="text-sm text-gray-400 mt-1">{stat.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const Hero = () => (
+  <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-4 md:px-12 py-12 relative overflow-hidden bg-background">
+    {/* Left Column */}
+    <div className="w-full md:w-1/2 flex flex-col items-center md:items-start z-10">
+      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-white text-center md:text-left">
+        Hi, I'm<br />
+        <span className="cyber-text">TITHI SHAH</span>
+      </h1>
+      <div className="text-xl md:text-2xl lg:text-3xl font-semibold mb-8 text-gray-300 text-center md:text-left">
+        Full-Stack Developer & Computer Science Student
+      </div>
+      <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-4 w-full">
+        <button className="cyber-button bg-gradient-primary hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-6 py-3 rounded-lg font-semibold text-white shadow-md">
+          Get In Touch
+        </button>
+        <button className="cyber-button border border-blue-400 hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-6 py-3 rounded-lg font-semibold text-white shadow-md">
+          Download Resume
+        </button>
+      </div>
+      <StatsPanel />
+    </div>
+    {/* Right Column */}
+    <div className="w-full md:w-1/2 flex justify-center items-center z-10">
+      <AnimatedTerminalPanel />
+    </div>
+    {/* Scroll Indicator */}
+    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <span className="scroll-hint-text">Scroll to explore <span className="scroll-arrow">→</span></span>
+    </div>
+  </section>
+);
 
 export default Hero;

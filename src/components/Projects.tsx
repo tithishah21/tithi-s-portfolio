@@ -167,10 +167,10 @@ const Projects = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   const stats = [
-    { label: "Total Projects", value: "8+", icon: Code },
+    { label: "Total Projects", value: "10+", icon: Code },
     { label: "Technologies", value: "15+", icon: Zap },
-    { label: "Hackathons Won", value: "2", icon: Award },
-    { label: "Team Projects", value: "5", icon: Users }
+    { label: "Hackathons", value: "6+", icon: Award },
+    { label: "Team Projects", value: "5+", icon: Users }
   ];
 
   return (
@@ -178,8 +178,8 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="cyber-text">Featured Projects</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg" style={{textShadow: '0 0 12px #3b82f6, 0 2px 8px #000'}}>
+            Featured Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -229,7 +229,7 @@ const Projects = () => {
                   key={index} 
                   className="cyber-button border-primary/20 hover:border-primary/40 transition-all duration-300 group overflow-hidden"
                 >
-                  {project.image && (
+                  {project.image && project.title !== "ResumeBuilderPro" && (
                     <div className="aspect-video overflow-hidden">
                       <img 
                         src={project.image} 
@@ -357,7 +357,7 @@ const Projects = () => {
             onClick={() => window.open('https://github.com', '_blank')}
           >
             <Github className="h-5 w-5 mr-2" />
-            View All Projects on GitHub
+            View More Projects on GitHub
           </Button>
         </div>
       </div>

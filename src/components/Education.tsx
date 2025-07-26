@@ -77,14 +77,11 @@ const Education = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="cyber-text">Education</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg" style={{textShadow: '0 0 12px #3b82f6, 0 2px 8px #000'}}>
+            Education
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Academic journey marked by excellence, continuous learning, and passion for 
-            computer science and innovative technology solutions.
-          </p>
+          
         </div>
 
         {/* Current Education */}
