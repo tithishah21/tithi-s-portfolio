@@ -44,13 +44,13 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
-      description: "Check out my latest projects and contributions"
+      href: "https://github.com/tithishah21",
+      description: "Check out my projects & contributions"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/tithi-shah-032a11288/",
       description: "Connect with me professionally"
     },
     {
