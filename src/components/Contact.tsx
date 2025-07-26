@@ -265,44 +265,7 @@ const Contact = () => {
             </Card>
 
             {/* Quick Links */}
-            <Card className="cyber-button border-accent/20 hover:border-accent/40 transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="text-xl text-accent">Quick Actions</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                {quickLinks.map((link, index) => {
-                  const Icon = link.icon;
-                  return (
-                    <div key={index}>
-                      <Button
-                        variant="outline"
-                        className={`w-full justify-start cyber-button hover:bg-${link.color}/10 border-${link.color}/30 hover:border-${link.color}`}
-                        onClick={() => {
-                          if (link.title === "Resume/CV") {
-                            // Handle resume download
-                            toast({
-                              title: "Resume Download",
-                              description: "Resume download feature will be implemented with actual file.",
-                            });
-                          } else if (link.title === "GitHub Portfolio") {
-                            window.open("https://github.com", "_blank");
-                          } else if (link.title === "LinkedIn Profile") {
-                            window.open("https://linkedin.com", "_blank");
-                          }
-                        }}
-                      >
-                        <Icon className="h-4 w-4 mr-2" />
-                        <div className="flex-1 text-left">
-                          <div className="font-medium">{link.title}</div>
-                          <div className="text-xs text-muted-foreground">{link.description}</div>
-                        </div>
-                        <ExternalLink className="h-3 w-3" />
-                      </Button>
-                    </div>
-                  );
-                })}
-              </CardContent>
-            </Card>
+            
 
             {/* Social Links */}
             <Card className="cyber-button border-primary/20 hover:border-primary/40 transition-all duration-300">

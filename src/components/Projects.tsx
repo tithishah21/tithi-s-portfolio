@@ -14,7 +14,7 @@ const Projects = () => {
       title: "ResumeBuilderPro",
       subtitle: "AI-Powered Resume Creation Platform",
       category: "full-stack",
-      status: "Professional Project",
+      status: "Professional full stack Project",
       image: resumeBuilderMockup,
       description: "A comprehensive full-stack resume builder featuring AI-powered interview preparation. Built during SDE internship at Intelivita Pvt. Ltd.",
       features: [
@@ -27,9 +27,28 @@ const Projects = () => {
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Gemini API", "Formik", "Yup", "Vercel"],
       achievements: ["Deployed with performance-first architecture", "Real-time form validation", "AI integration"],
       links: [
-        { name: "Live Demo", url: "https://resume-builder-project-flame.vercel.app", icon: ExternalLink }
+        { name: "Live Preview", url: "https://resume-builder-project-flame.vercel.app", icon: ExternalLink }
       ],
       highlights: ["AI Integration", "Full-Stack", "Professional"]
+    },
+    {
+      title: "NGO Support Platform",
+      subtitle: "BUDS of Christ Management System",
+      category: "full-stack",
+      status: "JPMC's Code for <Good> Project",
+      description: "Comprehensive platform for BUDS of Christ NGO built during J.P. Morgan's Code for Good Hackathon 2025. Selected among top 255/5000+ participants.",
+      features: [
+        "Custom forms for volunteer data management",
+        "Document upload and real-time CSV syncing",
+        "Digital progress tracking for child development",
+        "Vulnerability-based indexing for prioritized care",
+        "Role-based dashboards for different user types",
+        "Python ML model for predicting school dropout risks"
+      ],
+      technologies: ["Next.js", "JavaScript", "Tailwind CSS", "Supabase", "Python", "ML"],
+      achievements: ["Top 255/5000+ participants", "Social impact solution", "ML integration"],
+      links: [],
+      highlights: ["Social Impact", "ML Integration", "Hackathon"]
     },
     {
       title: "PrepMate",
@@ -50,25 +69,6 @@ const Projects = () => {
       highlights: ["Award Winner", "AI/ML", "Education"]
     },
     {
-      title: "NGO Support Platform",
-      subtitle: "BUDS of Christ Management System",
-      category: "full-stack",
-      status: "Hackathon Project",
-      description: "Comprehensive platform for BUDS of Christ NGO built during J.P. Morgan's Code for Good Hackathon 2025. Selected among top 255/5000+ participants.",
-      features: [
-        "Custom forms for volunteer data management",
-        "Document upload and real-time CSV syncing",
-        "Digital progress tracking for child development",
-        "Vulnerability-based indexing for prioritized care",
-        "Role-based dashboards for different user types",
-        "Python ML model for predicting school dropout risks"
-      ],
-      technologies: ["Next.js", "JavaScript", "Tailwind CSS", "Supabase", "Python", "ML"],
-      achievements: ["Top 255/5000+ participants", "Social impact solution", "ML integration"],
-      links: [],
-      highlights: ["Social Impact", "ML Integration", "Hackathon"]
-    },
-    {
       title: "Vimaanas Website",
       subtitle: "Aero Design Team Platform",
       category: "frontend",
@@ -82,8 +82,29 @@ const Projects = () => {
       ],
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "UI/UX Design"],
       achievements: ["Leadership role in IEEE-CS", "Modern design implementation"],
-      links: [],
+      links: [
+        { name: "Live Preview", url: "https://vimaanas.vercel.app/", icon: ExternalLink }
+      ],
       highlights: ["UI/UX", "Team Project", "Leadership"]
+    },
+    {
+      title: "Hackbattle website",
+      subtitle: "Website for 36 hour hackathon conducted by my chapter - IEEE CS VIT",
+      category: "frontend",
+      status: "Completed",
+      description: "Frontend development of Hackbattle website, conducted at VIT Vellore ,by IEEE CS, showcasing exquisite animated ideas in web development.",
+      features: [
+        "About page with crazy marquee texts",
+        "Tracks page for hackathon",
+        "Speaker, Sponsors page and FAQs page with incredible UI UX",
+        "Integrated authentication via Firebase"
+      ],
+      technologies: ["Web Technologies", "CSS", "JavaScript"],
+      achievements: ["Complex interface replication", "Institutional design"],
+      links: [
+        { name: "Live Preview", url: "https://hackbattle.ieeecsvit.com/", icon: ExternalLink }
+      ],
+      highlights: ["Institution", "Complex UI", "Replication"]
     },
     {
       title: "Task Tracker Website",
@@ -135,23 +156,6 @@ const Projects = () => {
       achievements: ["Precise design replication", "Advanced frontend skills"],
       links: [],
       highlights: ["Clone Project", "Precision", "Frontend"]
-    },
-    {
-      title: "VTOP Website Clone",
-      subtitle: "Institutional Interface Recreation",
-      category: "frontend",
-      status: "Completed",
-      description: "Cloned four pages of VIT's official website (VTOP), showcasing ability to replicate complex institutional web interfaces.",
-      features: [
-        "Four complete page recreations",
-        "Complex interface replication",
-        "Institutional design patterns",
-        "Responsive implementation"
-      ],
-      technologies: ["Web Technologies", "CSS", "JavaScript"],
-      achievements: ["Complex interface replication", "Institutional design"],
-      links: [],
-      highlights: ["Institution", "Complex UI", "Replication"]
     }
   ];
 
@@ -272,11 +276,13 @@ const Projects = () => {
                                 key={linkIndex}
                                 variant="outline"
                                 size="sm"
-                                className="cyber-button hover:bg-primary/10"
+                                className="cyber-button hover:bg-primary/10 flex items-center gap-1 text-sm px-3 py-1"
                                 onClick={() => window.open(link.url, '_blank')}
                               >
                                 <Icon className="h-4 w-4" />
+                                <span>{link.name}</span> {/* 👈 This makes the button read: "↗ Live Demo" */}
                               </Button>
+
                             );
                           })}
                         </div>
@@ -354,7 +360,7 @@ const Projects = () => {
           <Button 
             size="lg" 
             className="cyber-button bg-gradient-primary hover:shadow-neon transition-all duration-300"
-            onClick={() => window.open('https://github.com', '_blank')}
+            onClick={() => window.open('https://github.com/tithishah21', '_blank')}
           >
             <Github className="h-5 w-5 mr-2" />
             View More Projects on GitHub

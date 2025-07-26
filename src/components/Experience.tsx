@@ -23,7 +23,7 @@ const Experience = () => {
       ],
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Gemini API", "Formik", "Yup", "Vercel"],
       links: [
-        { name: "Live Demo", url: "https://resume-builder-project-flame.vercel.app" }
+        { name: "Live Demo of the project created during the internship tenure", url: "https://resume-builder-project-flame.vercel.app" }
       ]
     },
     {
@@ -246,7 +246,7 @@ const Experience = () => {
                 className="cyber-button border-secondary/20 hover:border-secondary/40 transition-all duration-300"
               >
                 <CardHeader>
-                  <CardTitle className="text-lg text-secondary">{workshop.title}</CardTitle>
+                  <CardTitle className="text-lg text-secondary text-blue-600">{workshop.title}</CardTitle>
                   <div className="flex flex-col gap-2 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Users className="h-3 w-3" />

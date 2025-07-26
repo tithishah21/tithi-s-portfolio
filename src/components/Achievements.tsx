@@ -38,6 +38,7 @@ const Achievements = () => {
       icon: Award,
       color: "secondary"
     },
+
     {
       title: "Devraj Trophy - Academic Excellence",
       subtitle: "Standing Academically First",
@@ -81,7 +82,7 @@ const Achievements = () => {
         "Equipped students with responsible AI integration skills"
       ],
       icon: Zap,
-      color: "secondary"
+      color: "primary"
     },
     {
       title: "Hackathon Tech Panelist",
@@ -94,7 +95,7 @@ const Achievements = () => {
         "Inspired learning journey for participants"
       ],
       icon: Target,
-      color: "accent"
+      color: "primary"
     }
   ];
 
@@ -137,10 +138,7 @@ const Achievements = () => {
             Achievements
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Recognition of excellence in academics, technical innovation, leadership, 
-            and impactful contributions to the technology community.
-          </p>
+          
         </div>
 
         {/* Achievement Stats */}

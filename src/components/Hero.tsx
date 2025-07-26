@@ -107,17 +107,21 @@ const Hero = () => (
         Hi, I'm<br />
         <span className="cyber-text">TITHI SHAH</span>
       </h1>
-      <div className="text-xl md:text-2xl lg:text-3xl font-semibold mb-8 text-gray-300 text-center md:text-left">
+      <div className="text-lg md:text-xl lg:text-2xl font-semibold mb-8 text-gray-300 text-center md:text-left">
         Full-Stack Developer & Computer Science Student
       </div>
-      <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-4 w-full">
-        <button className="cyber-button bg-gradient-primary hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-6 py-3 rounded-lg font-semibold text-white shadow-md">
-          Get In Touch
-        </button>
-        <button className="cyber-button border border-blue-400 hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-6 py-3 rounded-lg font-semibold text-white shadow-md">
+      <div className="flex justify-center md:justify-start w-full mb-4">
+        <a
+          href="/TithiShah_Resume.pdf" // ← make sure this file exists in your `public/` directory
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cyber-button border border-blue-400 hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-40 py-3 rounded-lg font-semibold text-white shadow-md"
+        >
+          <Download className="inline-block mr-2 w-5 h-5" />
           Download Resume
-        </button>
+        </a>
       </div>
+
       <StatsPanel />
     </div>
     {/* Right Column */}
