@@ -5,6 +5,20 @@ import { Trophy, Users, Calendar, Award, Target, Zap, Star, TrendingUp } from 'l
 const Achievements = () => {
   const majorAchievements = [
     {
+      title: "Upcoming J.P. Morgan Chase Internship",
+      subtitle: "Software Engineering Internship - Bangalore",
+      category: "Professional Milestone",
+      description: "Selected for an upcoming May 2026 internship at J.P. Morgan Chase in Bangalore, marking a major professional milestone in my software engineering journey.",
+      details: [
+        "Secured internship opportunity at J.P. Morgan Chase",
+        "Joining the Bangalore office in May 2026"
+      ],
+      impact: "May 2026",
+      date: "2026",
+      icon: Trophy,
+      color: "primary"
+    },
+    {
       title: "J.P. Morgan Chase Code for Good Hackathon 2025",
       subtitle: "Top 250 from 50,000+ Applicants",
       category: "Professional Recognition",
@@ -118,7 +132,7 @@ const Achievements = () => {
       category: "Academic"
     },
     {
-      title: "8.9 CGPA at VIT Vellore",
+      title: "8.99 CGPA at VIT Vellore",
       description: "Maintaining excellent academic performance in Computer Science Engineering",
       category: "Current"
     },

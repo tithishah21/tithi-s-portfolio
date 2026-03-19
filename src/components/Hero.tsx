@@ -55,10 +55,10 @@ const AnimatedTerminalPanel = () => {
 };
 
 const stats = [
-  { icon: <Rocket className="text-blue-400 w-6 h-6 mb-1" />, label: 'Projects', value: 10, suffix: '+' },
+  { icon: <Rocket className="text-blue-400 w-6 h-6 mb-1" />, label: 'Projects', value: 11, suffix: '+' },
   { icon: <Target className="text-blue-400 w-6 h-6 mb-1" />, label: 'Hackathons', value: 6 },
   { icon: <Briefcase className="text-blue-400 w-6 h-6 mb-1" />, label: 'Internships', value: 1 },
-  { icon: <Github className="text-blue-400 w-6 h-6 mb-1" />, label: 'Contributions', value: 450, suffix: '+' },
+  { icon: <Github className="text-blue-400 w-6 h-6 mb-1" />, label: 'Contributions', value: 687, suffix: '+' },
 ];
 
 const AnimatedCounter = ({ to, duration = 1.2 }) => {
@@ -113,8 +113,7 @@ const Hero = () => (
       <div className="flex justify-center md:justify-start w-full mb-4">
         <a
           href="/TithiShah_Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
+          download="Tithi_Shah_Resume_Feb_2026.pdf"
           className="cyber-button border border-blue-400 hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-6 md:px-40 py-3 rounded-lg font-semibold text-white shadow-md text-center"
         >
           <Download className="inline-block mr-2 w-5 h-5" />

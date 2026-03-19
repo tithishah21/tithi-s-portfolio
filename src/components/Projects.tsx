@@ -24,7 +24,7 @@ const Projects = () => {
         "PDF export functionality with html2canvas",
         "Global state management with performance optimization"
       ],
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Gemini API", "Formik", "Yup", "Vercel"],
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Formik", "React DOM", "JavaScript"],
       achievements: ["Deployed with performance-first architecture", "Real-time form validation", "AI integration"],
       links: [
         { name: "Live Preview", url: "https://resume-builder-project-flame.vercel.app", icon: ExternalLink }
@@ -45,10 +45,28 @@ const Projects = () => {
         "Role-based dashboards for different user types",
         "Python ML model for predicting school dropout risks"
       ],
-      technologies: ["Next.js", "JavaScript", "Tailwind CSS", "Supabase", "Python", "ML"],
+      technologies: ["Next.js", "JavaScript", "Tailwind CSS", "Supabase", "Python", "Machine Learning"],
       achievements: ["Top 255/5000+ participants", "Social impact solution", "ML integration"],
       links: [],
       highlights: ["Social Impact", "ML Integration", "Hackathon"]
+    },
+    {
+      title: "Bitcoin Fraud Ring Detection Research",
+      subtitle: "TDA + GNN Research Project",
+      category: "ai-ml",
+      status: "Research Paper in Progress",
+      description: "Ongoing team research with two fellow VIT Vellore students under professor mentorship on detecting coordinated fraud rings in Bitcoin transaction networks using topological data analysis and graph neural networks.",
+      features: [
+        "Works on the Elliptic Bitcoin Transaction Dataset for licit vs illicit transaction analysis",
+        "Extracts persistent homology based topological features to capture cycles and higher-order fraud patterns",
+        "Combines topology-derived signals with transaction attributes inside a GNN pipeline",
+        "Focuses on improving fraud ring detection in dense decentralized financial graphs",
+        "Research emphasizes both robustness and interpretability in fraud detection"
+      ],
+      technologies: ["Python", "Machine Learning", "Artificial Intelligence", "TensorFlow", "Scikit-Learn", "MLflow"],
+      achievements: ["Research paper in progress", "Team project with professor guidance", "Applied graph-based fraud detection"],
+      links: [],
+      highlights: ["Research", "Team Project", "AI/ML"]
     },
     {
       title: "PrepMate",
@@ -63,7 +81,7 @@ const Projects = () => {
         "Responsive design optimized for student workflows",
         "Real-time collaboration features"
       ],
-      technologies: ["React.js", "Tailwind CSS", "JavaScript", "RAG", "AI/ML"],
+      technologies: ["React.js", "JavaScript", "Tailwind CSS", "Artificial Intelligence", "Machine Learning"],
       achievements: ["Won Best UI/UX Award", "Innovative RAG implementation", "Student-focused design"],
       links: [],
       highlights: ["Award Winner", "AI/ML", "Education"]
@@ -80,7 +98,7 @@ const Projects = () => {
         "Project portfolio display",
         "Performance-optimized architecture"
       ],
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "UI/UX Design"],
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React.js", "Front-End Development"],
       achievements: ["Leadership role in IEEE-CS", "Modern design implementation"],
       links: [
         { name: "Live Preview", url: "https://vimaanas.vercel.app/", icon: ExternalLink }
@@ -99,7 +117,7 @@ const Projects = () => {
         "Speaker, Sponsors page and FAQs page with incredible UI UX",
         "Integrated authentication via Firebase"
       ],
-      technologies: ["Web Technologies", "CSS", "JavaScript"],
+      technologies: ["Next.js", "JavaScript", "Tailwind CSS", "CSS", "Front-End Development"],
       achievements: ["Complex interface replication", "Institutional design"],
       links: [
         { name: "Live Preview", url: "https://hackbattle.ieeecsvit.com/", icon: ExternalLink }
@@ -118,7 +136,7 @@ const Projects = () => {
         "Intuitive user interface",
         "Task organization and management"
       ],
-      technologies: ["React", "CSS", "JavaScript", "Animations"],
+      technologies: ["React.js", "JavaScript", "CSS", "CSS Flexbox", "Tailwind CSS"],
       achievements: ["Fully responsive", "Animation-rich interface"],
       links: [],
       highlights: ["Animations", "Responsive", "UX"]
@@ -135,10 +153,28 @@ const Projects = () => {
         "Enhanced user experience",
         "Content management system"
       ],
-      technologies: ["Web Technologies", "Responsive Design", "UX/UI"],
+      technologies: ["React.js", "JavaScript", "Tailwind CSS", "CSS Grid", "Front-End Development"],
       achievements: ["News platform development", "UX optimization"],
       links: [],
       highlights: ["News Platform", "Responsive", "Optimization"]
+    },
+    {
+      title: "E-Commerce Backend System",
+      subtitle: "Pure Backend Commerce Project",
+      category: "backend",
+      status: "In Progress",
+      description: "Backend-focused ecommerce project currently being built to handle the core business logic of an online store, with emphasis on scalable APIs, data modeling, and clean service architecture.",
+      features: [
+        "REST API development for products, carts, orders, and users",
+        "Structured database design for ecommerce workflows and relationships",
+        "Authentication, validation, and role-aware request handling",
+        "Backend-first architecture designed for future frontend integration",
+        "Focus on maintainable services and production-style project structure"
+      ],
+      technologies: ["Node.js", "TypeScript", "MySQL", "Oracle SQL", "DBMS", "Git"],
+      achievements: ["Backend-focused system design", "Production-style API architecture"],
+      links: [],
+      highlights: ["Backend", "In Progress", "System Design"]
     },
     {
       title: "Amazon Website Clone",
@@ -152,16 +188,34 @@ const Projects = () => {
         "Responsive layout implementation",
         "Advanced CSS techniques"
       ],
-      technologies: ["HTML", "CSS", "JavaScript"],
+      technologies: ["HTML5", "CSS", "JavaScript", "CSS Grid", "CSS Flexbox"],
       achievements: ["Precise design replication", "Advanced frontend skills"],
       links: [],
       highlights: ["Clone Project", "Precision", "Frontend"]
+    },
+    {
+      title: "VTOP Website Clone",
+      subtitle: "Portal Interface Recreation",
+      category: "frontend",
+      status: "Completed",
+      description: "Frontend clone project focused on recreating the VTOP experience with careful layout matching and responsive design practice.",
+      features: [
+        "Recreated key student portal screens and layout flows",
+        "Applied CSS Grid and Flexbox for structured responsive layouts",
+        "Focused on UI consistency and faithful portal-style replication",
+        "Strengthened frontend fundamentals through interface reproduction"
+      ],
+      technologies: ["HTML5", "CSS", "JavaScript", "CSS Grid", "CSS Flexbox"],
+      achievements: ["Strong layout replication", "Frontend fundamentals strengthened"],
+      links: [],
+      highlights: ["Clone Project", "Responsive", "Frontend"]
     }
   ];
 
   const categories = [
     { id: 'all', name: 'All Projects', count: projects.length },
     { id: 'full-stack', name: 'Full-Stack', count: projects.filter(p => p.category === 'full-stack').length },
+    { id: 'backend', name: 'Backend', count: projects.filter(p => p.category === 'backend').length },
     { id: 'ai-ml', name: 'AI/ML', count: projects.filter(p => p.category === 'ai-ml').length },
     { id: 'frontend', name: 'Frontend', count: projects.filter(p => p.category === 'frontend').length }
   ];
@@ -171,10 +225,10 @@ const Projects = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   const stats = [
-    { label: "Total Projects", value: "10+", icon: Code },
+    { label: "Total Projects", value: "11+", icon: Code },
     { label: "Technologies", value: "15+", icon: Zap },
     { label: "Hackathons", value: "6+", icon: Award },
-    { label: "Team Projects", value: "5+", icon: Users }
+    { label: "Team Projects", value: "7+", icon: Users }
   ];
 
   return (

@@ -3,13 +3,34 @@ import { Code, Briefcase, GraduationCap, Trophy, UserCheck, Terminal } from 'luc
 
 const About = () => {
   const skills = [
-    { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript"] },
-    { category: "Backend", items: ["Node.js", "Python", "Java", "SQL", "Supabase"] },
-    { category: "Tools", items: ["Git", "Vercel", "Firebase", "ESLint", "MLFlow"] },
-    { category: "Concepts", items: ["Machine Learning", "Full-Stack Web Development", "System Design","UI/UX Design"] }
+    {
+      category: "Frontend",
+      items: ["React.js", "React DOM", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Bootstrap", "HTML5", "CSS", "CSS Grid", "CSS Flexbox", "Formik", "Zustand"]
+    },
+    {
+      category: "Backend & Data",
+      items: ["Node.js", "Supabase", "MySQL", "Oracle SQL", "DBMS", "Full-Stack Development"]
+    },
+    {
+      category: "AI / ML",
+      items: ["Machine Learning", "Artificial Intelligence", "TensorFlow", "Scikit-Learn", "MLflow"]
+    },
+    {
+      category: "Cloud & Tools",
+      items: ["Amazon Web Services (AWS)", "Cloud Computing", "Git", "ESLint", "Packet Tracer"]
+    },
+    {
+      category: "Core CS",
+      items: ["C++", "C", "Python", "Operating Systems", "Object-Oriented Programming", "Front-End Development"]
+    }
   ];
 
   const highlights = [
+    {
+      icon: Briefcase,
+      title: "Upcoming Sep Intern at JPMC in Bangalore",
+      description: "Joining J.P. Morgan Chase as an incoming intern in September in Bangalore, adding another exciting chapter to my software engineering journey."
+    },
     {
       icon: Trophy,
       title: "Hackathon Winner",
@@ -28,7 +49,7 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "CSE @ VIT Vellore",
-      description: "Pre-final year student,pursuing CSE Core at Vellore Institute of Technology ,Vellore campus with CGPA of 8.9."
+      description: "Pre-final year student,pursuing CSE Core at Vellore Institute of Technology ,Vellore campus with CGPA of 8.99."
     },
     {
       icon: UserCheck,

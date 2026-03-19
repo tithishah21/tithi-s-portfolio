@@ -10,14 +10,15 @@ const Education = () => {
       degree: "Computer Science Engineering Core",
       duration: "2023 - 2027",
       status: "Currently Pursuing",
-      cgpa: "8.9",
+      cgpa: "8.99",
       maxCgpa: "10.0",
-      description: "Pursuing comprehensive education in computer science with focus on modern software development, algorithms, and emerging technologies.",
+      description: "Pursuing comprehensive education in computer science with focus on modern software development, algorithms, and emerging technologies, while also co-authoring a research paper at VIT Vellore under professor mentorship.",
       highlights: [
-        "Strong academic performance with 8.9 CGPA",
+        "Strong academic performance with 8.99 CGPA",
         "Active participation in technical societies",
         "Leadership roles in IEEE Computer Society",
-        "Hackathon participation and wins"
+        "Hackathon participation and wins",
+        "Co-authoring a research paper on Bitcoin fraud ring detection with two fellow students under professor guidance"
       ],
       courses: [
         "Data Structures & Algorithms",
