@@ -29,7 +29,7 @@ const About = () => {
     {
       icon: Briefcase,
       title: "Upcoming Sep Intern at JPMC in Bangalore",
-      description: "Joining J.P. Morgan Chase as an incoming intern in September in Bangalore, adding another exciting chapter to my software engineering journey."
+      description: "Joining J.P. Morgan Chase as an incoming intern in May in Bangalore, adding another exciting chapter to my software engineering journey."
     },
     {
       icon: Trophy,
