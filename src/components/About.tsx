@@ -1,5 +1,4 @@
-import { Badge } from '@/components/ui/badge';
-import { Code, Briefcase, GraduationCap, Trophy, UserCheck, Terminal } from 'lucide-react';
+import { Briefcase, GraduationCap, Trophy, UserCheck, Terminal } from 'lucide-react';
 
 const About = () => {
   const skills = [
@@ -9,52 +8,52 @@ const About = () => {
     },
     {
       category: "Backend & Data",
-      items: ["Node.js", "Supabase", "MySQL", "Oracle SQL", "DBMS", "Full-Stack Development"]
+      items: ["Node.js", "Express.js", "Java", "Spring Boot", "Supabase", "MySQL", "Oracle SQL", "PostgreSQL", "DBMS", "SQL"]
     },
     {
       category: "AI / ML",
-      items: ["Machine Learning", "Artificial Intelligence", "TensorFlow", "Scikit-Learn", "MLflow"]
+      items: ["Machine Learning", "Artificial Intelligence", "TensorFlow", "Scikit-Learn", "MLflow", "Big Data Systems"]
     },
     {
       category: "Cloud & Tools",
-      items: ["Amazon Web Services (AWS)", "Cloud Computing", "Git", "ESLint", "Packet Tracer"]
+      items: ["Amazon Web Services (AWS)", "Cloud Computing", "Kubernetes", "Docker", "Git", "GitHub", "Vercel", "ESLint", "Packet Tracer"]
     },
     {
       category: "Core CS",
-      items: ["C++", "C", "Python", "Operating Systems", "Object-Oriented Programming", "Front-End Development"]
+      items: ["C++", "C", "Python", "Data Structures & Algorithms", "Operating Systems", "Computer Networks", "Object-Oriented Programming", "Full-Stack Development"]
     }
   ];
 
   const highlights = [
     {
       icon: Briefcase,
-      title: "Upcoming Sep Intern at JPMC in Bangalore",
-      description: "Joining J.P. Morgan Chase as an incoming intern in May in Bangalore, adding another exciting chapter to my software engineering journey."
-    },
-    {
-      icon: Trophy,
-      title: "Hackathon Winner",
-      description: "Winner of Code4Change 2.0 Hackathon, held during Yantra 2025 at VIT Vellore for building 'PrepMate' - an AI-powered exam prep tool."
+      title: "SEP Intern @ JPMorgan Chase & Co.",
+      description: "Currently contributing to a full-stack migration initiative modernizing legacy systems into a card-based architecture using Java, Spring Boot, SQL, Kubernetes, AWS, and Big Data tooling."
     },
     {
       icon: Terminal,
-      title: "Shortlisted for J.P. Morgan Chase's prestigious Code for Good Hackathon 2025,selected among the top 255 candidates out of 50,000+ applicants.",
-      description: "Selected to participate in the hackathon to develop tech solutions for social good alongside top engineering talented across India."
+      title: "Selected for JPMorgan Chase Code for Good 2025",
+      description: "Chosen for JPMorgan Chase's flagship social hackathon, competing alongside top engineering students to build technology solutions for nonprofit organizations."
+    },
+    {
+      icon: Trophy,
+      title: "Yantra'25 Hackathon Winner",
+      description: "Built PrepMate, a RAG-powered study assistant that converts PDFs and YouTube content into flashcards and summaries, and won at VIT Vellore in February 2025."
     },
     {
       icon: Briefcase,
       title: "SDE Intern @ Intelivita",
-      description: "Worked on full-stack, responsive ResumeBuilderPro platform with AI Interview Chatbot & dynamic UI using Next.js, TypeScript, and Tailwind CSS with Supabase for authentication and data storage."
+      description: "Built ResumeBuilderPro, a full-stack AI-powered resume platform using Next.js, TypeScript, Tailwind CSS, Supabase, Formik, Zustand, and Gemini API integration."
     },
     {
       icon: GraduationCap,
       title: "CSE @ VIT Vellore",
-      description: "Pre-final year student,pursuing CSE Core at Vellore Institute of Technology ,Vellore campus with CGPA of 8.99."
+      description: "Pre-final year B.Tech Computer Science Engineering (Core) student at VIT Vellore with a CGPA of 9.02."
     },
     {
       icon: UserCheck,
-      title: "Conducted Prompt Engineering Workshop for 80+ VITians at IEEE-CS.",
-      description: "The session covered key prompting techniques like zero-shot, few-shot, and chain-of-thought prompting, along with real-world developer tools.Participants learned how to craft effective prompts to unlock the true potential of generative Al.The event aimed to equip students with practical skills to responsibly integrate Al into their coding workflows."
+      title: "Prompt Engineering Workshop Facilitator",
+      description: "Conducted a workshop at IEEE Computer Society, VIT Vellore on zero-shot, few-shot, and chain-of-thought prompting with real-world developer tooling and responsible AI usage."
     }
   ];
 
@@ -64,10 +63,8 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg" style={{ textShadow: '0 0 12px #3b82f6, 0 2px 8px #000' }}>About Me</h2>
-          
         </div>
 
-        {/* Highlights Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
           {highlights.map((item, index) => {
             const Icon = item.icon;
@@ -83,7 +80,6 @@ const About = () => {
           })}
         </div>
 
-        {/* Technical Skills Card */}
         <div className="cyber-button border-accent/20 hover:border-blue-400 transition-all duration-300 rounded-xl bg-black/80 shadow-md hover:scale-105 hover:shadow-blue-400/30 cursor-pointer">
           <div className="p-6">
             <h3 className="text-xl font-semibold mb-4 text-accent drop-shadow">Technical Skills</h3>

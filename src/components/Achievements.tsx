@@ -5,54 +5,51 @@ import { Trophy, Users, Calendar, Award, Target, Zap, Star, TrendingUp } from 'l
 const Achievements = () => {
   const majorAchievements = [
     {
-      title: "Upcoming J.P. Morgan Chase Internship",
-      subtitle: "Software Engineering Internship - Bangalore",
+      title: "Current SEP Intern at JPMorgan Chase & Co.",
+      subtitle: "Software Engineering Program Internship",
       category: "Professional Milestone",
-      description: "Selected for an upcoming May 2026 internship at J.P. Morgan Chase in Bangalore, marking a major professional milestone in my software engineering journey.",
+      description: "Currently working on an enterprise-scale modernization effort at JPMorgan Chase & Co., contributing to full-stack migration work across global financial systems.",
       details: [
-        "Secured internship opportunity at J.P. Morgan Chase",
-        "Joining the Bangalore office in May 2026"
+        "Working on a legacy-to-modern card-based architecture migration",
+        "Gaining hands-on experience with Java, Spring Boot, SQL, Kubernetes, AWS, and Big Data tools"
       ],
-      impact: "May 2026",
+      impact: "Current Role",
       date: "2026",
       icon: Trophy,
       color: "primary"
     },
     {
       title: "J.P. Morgan Chase Code for Good Hackathon 2025",
-      subtitle: "Top 250 from 50,000+ Applicants",
+      subtitle: "Selected Participant",
       category: "Professional Recognition",
-      description: "Shortlisted among top 250 candidates from 50,000+ applicants through rigorous multi-stage selection process.",
+      description: "Selected to participate in JPMorgan Chase's flagship social hackathon, building tech solutions for nonprofit organizations with top engineering students.",
       details: [
-        "Completed Data Structures & Algorithms coding round",
-        "Successfully cleared behavioral interview",
-        "Resume evaluation and technical assessment",
-        "Selected for final hackathon developing tech solutions for social good",
-        "Collaborated with top engineering talent across India"
+        "Advanced through a multi-stage selection process",
+        "Participated in a national-level social impact hackathon",
+        "Collaborated on technology solutions for nonprofit use cases",
+        "Worked alongside top engineering students across India"
       ],
-      impact: "0.5% Selection Rate",
+      impact: "National Selection",
       date: "2025",
       icon: Trophy,
       color: "primary"
     },
     {
       title: "Yantra'25 Hackathon Winner",
-      subtitle: "Best UI/UX Award - VIT Vellore",
+      subtitle: "Winner - VIT Vellore",
       category: "Technical Innovation",
-      description: "Won hackathon with PrepMate, an innovative educational assistance platform featuring RAG implementation.",
+      description: "Won Yantra'25 at VIT Vellore with PrepMate, an educational assistant using RAG to convert study content into revision-friendly formats.",
       details: [
         "Developed RAG (Retrieval-Augmented Generation) application",
-        "Created exceptional UI/UX design recognized by judges",
         "Built PDF to flashcard conversion system",
         "Implemented YouTube video summarization",
         "Designed collaborative learning platform"
       ],
-      impact: "Best UI/UX Award",
-      date: "2025",
+      impact: "Hackathon Winner",
+      date: "Feb 2025",
       icon: Award,
       color: "secondary"
     },
-
     {
       title: "Devraj Trophy - Academic Excellence",
       subtitle: "Standing Academically First",
@@ -75,12 +72,12 @@ const Achievements = () => {
     {
       title: "Senior Core Member",
       organization: "IEEE Computer Society, VIT Vellore",
-      duration: "May 2024 - Currently",
+      duration: "May 2024 - Aug 2025",
       responsibilities: [
-        "Leading frontend development for VIMAANAS website",
-        "Developed Hackbattle hackathon website",
-        "Facilitating technical workshops and events",
-        "Mentoring junior members in web development"
+        "Contributed to the VIMAANAS website development",
+        "Developed the HackBattle website frontend",
+        "Supported technical initiatives and community events",
+        "Built leadership and collaboration skills in team settings"
       ],
       icon: Users,
       color: "primary"
@@ -103,7 +100,8 @@ const Achievements = () => {
       organization: "HackBattle - IEEE Computer Society",
       duration: "September 2024",
       responsibilities: [
-        "Reviewed diverse projects from AI to full-stack development",
+        "Reviewed and judged over 100 hackathon projects",
+        "Covered projects from AI to full-stack development",
         "Provided technical feedback to participants",
         "Enhanced event management skills",
         "Inspired learning journey for participants"
@@ -116,7 +114,7 @@ const Achievements = () => {
   const stats = [
     { label: "Hackathons Won", value: "1", icon: Trophy },
     { label: "Leadership Positions", value: "3+", icon: Users },
-    { label: "Technical Workshops", value: "5+", icon: Zap },
+    { label: "Technical Workshops", value: "1+", icon: Zap },
     { label: "Academic Excellence Awards", value: "3", icon: Star }
   ];
 
@@ -132,30 +130,27 @@ const Achievements = () => {
       category: "Academic"
     },
     {
-      title: "8.99 CGPA at VIT Vellore",
+      title: "9.02 CGPA at VIT Vellore",
       description: "Maintaining excellent academic performance in Computer Science Engineering",
       category: "Current"
     },
     {
-      title: "Technical Leadership Recognition",
-      description: "Recognized for leadership skills in IEEE Computer Society and technical organizations",
-      category: "Leadership"
+      title: "Current SEP Intern at JPMorgan Chase & Co.",
+      description: "Gained enterprise software engineering exposure through a full-stack modernization internship",
+      category: "Professional"
     }
   ];
 
   return (
     <section id="achievements" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg" style={{textShadow: '0 0 12px #3b82f6, 0 2px 8px #000'}}>
             Achievements
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
-          
         </div>
 
-        {/* Achievement Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
@@ -171,20 +166,16 @@ const Achievements = () => {
           })}
         </div>
 
-        {/* Major Achievements */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-8 text-center">
             <span className="text-primary">Major Achievements</span>
           </h3>
-          
+
           <div className="space-y-8">
             {majorAchievements.map((achievement, index) => {
               const Icon = achievement.icon;
               return (
-                <Card 
-                  key={index} 
-                  className={`cyber-button border-${achievement.color}/20 hover:border-${achievement.color}/40 transition-all duration-300 group`}
-                >
+                <Card key={index} className={`cyber-button border-${achievement.color}/20 hover:border-${achievement.color}/40 transition-all duration-300 group`}>
                   <CardHeader>
                     <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                       <div className="flex-1">
@@ -204,9 +195,9 @@ const Achievements = () => {
                           </Badge>
                         </div>
                       </div>
-                      
+
                       <div className="text-center lg:text-right">
-                        <div className={`inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-primary text-primary-foreground font-bold`}>
+                        <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-primary text-primary-foreground font-bold">
                           {achievement.impact}
                         </div>
                       </div>
@@ -239,20 +230,16 @@ const Achievements = () => {
           </div>
         </div>
 
-        {/* Leadership Achievements */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-8 text-center">
             <span className="text-secondary">Leadership & Community Impact</span>
           </h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {leadershipAchievements.map((achievement, index) => {
               const Icon = achievement.icon;
               return (
-                <Card 
-                  key={index} 
-                  className={`cyber-button border-${achievement.color}/20 hover:border-${achievement.color}/40 transition-all duration-300`}
-                >
+                <Card key={index} className={`cyber-button border-${achievement.color}/20 hover:border-${achievement.color}/40 transition-all duration-300`}>
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
                       <Icon className={`h-5 w-5 text-${achievement.color}`} />
@@ -271,7 +258,7 @@ const Achievements = () => {
                       </div>
                     </div>
                   </CardHeader>
-                  
+
                   <CardContent>
                     <h6 className="font-medium mb-3 text-sm">Key Responsibilities</h6>
                     <ul className="space-y-2">
@@ -289,18 +276,14 @@ const Achievements = () => {
           </div>
         </div>
 
-        {/* Academic & Professional Recognition */}
         <div>
           <h3 className="text-2xl font-semibold mb-8 text-center">
             <span className="text-accent">Academic & Professional Recognition</span>
           </h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {recognitions.map((recognition, index) => (
-              <Card 
-                key={index} 
-                className="cyber-button border-accent/20 hover:border-accent/40 transition-all duration-300"
-              >
+              <Card key={index} className="cyber-button border-accent/20 hover:border-accent/40 transition-all duration-300">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
@@ -314,7 +297,7 @@ const Achievements = () => {
                     <Award className="h-5 w-5 text-accent" />
                   </div>
                 </CardHeader>
-                
+
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed">
                     {recognition.description}

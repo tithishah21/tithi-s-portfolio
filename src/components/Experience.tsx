@@ -6,22 +6,39 @@ import { Calendar, MapPin, ExternalLink, Code, Users, Zap } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
+      title: "Software Engineering Program (SEP) Intern",
+      company: "JPMorgan Chase & Co.",
+      location: "India",
+      duration: "May 2026 - Present",
+      status: "Current Position",
+      type: "Internship",
+      project: "Legacy to modern card-based architecture migration",
+      description: "Working on an enterprise-scale full-stack migration project that modernizes legacy Olympics-era systems used across JPMorgan's global infrastructure.",
+      achievements: [
+        "Contributing to migration from legacy systems to a modern card-based architecture",
+        "Building across backend services and frontend integration in a large financial software stack",
+        "Working with Java, Spring Boot, SQL, Kubernetes, AWS, and Big Data tools",
+        "Collaborating in an Agile team environment on enterprise-scale systems"
+      ],
+      technologies: ["Java", "Spring Boot", "SQL", "Kubernetes", "AWS", "Big Data", "Agile"]
+    },
+    {
       title: "SDE Intern",
       company: "Intelivita Pvt. Ltd.",
       location: "Ahmedabad, Gujarat",
       duration: "May 2025 - July 2025",
-      status: "Current Position",
+      status: "Completed",
       type: "Internship",
       project: "ResumeBuilderPro - AI-Powered Resume Creation Platform",
-      description: "Built a comprehensive full-stack, responsive web application using cutting-edge technologies. Implemented secure authentication, AI-powered features, and seamless user experience.",
+      description: "Built a full-stack, responsive web application focused on resume creation, interview preparation, and secure data handling.",
       achievements: [
         "Developed full-stack web application using Next.js, TypeScript, and Tailwind CSS",
         "Implemented secure authentication and resume storage with Supabase",
-        "Created intuitive step-based resume builder with Formik + Yup validation",
-        "Integrated Gemini API-powered AI chatbot for interview preparation",
-        "Achieved seamless deployment with performance-first architecture on Vercel"
+        "Designed a step-based resume builder with Formik + Yup and PDF export via html2canvas",
+        "Integrated a Gemini API-powered chatbot for personalized behavioral and technical interview Q&A",
+        "Implemented Zustand for state management, enforced code quality with ESLint, and deployed on Vercel"
       ],
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Gemini API", "Formik", "Yup", "Vercel"],
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Gemini API", "Formik", "Yup", "Zustand", "ESLint", "Vercel"],
       links: [
         { name: "Live Demo of the project created during the internship tenure", url: "https://resume-builder-project-flame.vercel.app" }
       ]
@@ -30,23 +47,20 @@ const Experience = () => {
       title: "Senior Core Member",
       company: "IEEE Computer Society",
       location: "VIT Vellore, Tamil Nadu",
-      duration: "May 2024 - Currently",
-      status: "Active",
+      duration: "May 2024 - Aug 2025",
+      status: "Completed",
       type: "Leadership",
-      description: "Leading frontend development initiatives and demonstrating excellence in technical project management and team collaboration.",
+      description: "Worked on community-facing technical initiatives, frontend development, and team-based execution across IEEE-CS projects.",
       achievements: [
-        "Leading frontend development for VIMAANAS (aero-design team) website",
-        "Developed Hackbattle hackathon website frontend for IEEE-CS",
-        "Demonstrated exceptional communication skills in technical presentations",
-        "Proven ability to work independently and collaborate effectively in teams",
-        "Facilitating learning and development for fellow students"
+        "Worked on the development of the VIMAANAS aero-design team website",
+        "Developed the official HackBattle website frontend for IEEE-CS",
+        "Demonstrated strong communication, collaboration, and leadership in team environments"
       ],
-      technologies: ["Next.js", "React", "TypeScript", "UI/UX Design", "Project Management"],
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Project Coordination"],
       responsibilities: [
-        "Frontend Development Leadership",
+        "Frontend Development",
         "Technical Project Coordination",
-        "Community Engagement",
-        "Workshop Facilitation"
+        "Community Engagement"
       ]
     },
     {
@@ -57,14 +71,13 @@ const Experience = () => {
       status: "Completed",
       type: "Community Leadership",
       domain: "Tech | Management",
-      description: "Contributed to technical initiatives and community building activities while developing leadership and project management skills.",
+      description: "Contributed across technical and management domains in club activities and events.",
       achievements: [
-        "Participated in technical workshop organization",
-        "Contributed to open-source community initiatives",
-        "Developed project management and teamwork skills",
-        "Engaged in technology advocacy and education"
+        "Supported club activities across technical and management responsibilities",
+        "Contributed to team coordination and event execution",
+        "Built collaboration and project management experience"
       ],
-      technologies: ["Open Source", "Community Management", "Event Organization"]
+      technologies: ["Community Management", "Event Organization", "Team Collaboration"]
     }
   ];
 
@@ -73,18 +86,18 @@ const Experience = () => {
       title: "Prompt Engineering Workshop Facilitator",
       organization: "IEEE Computer Society, VIT Vellore",
       date: "June 2025",
-      description: "Conducted comprehensive workshop on advanced prompting techniques including zero-shot, few-shot, and chain-of-thought prompting.",
+      description: "Conducted a workshop on advanced prompting techniques including zero-shot, few-shot, and chain-of-thought prompting.",
       impact: "Equipped students with practical skills for responsible AI integration in coding workflows",
       topics: ["Zero-shot Prompting", "Few-shot Learning", "Chain-of-thought Prompting", "Developer Tools Integration"]
     },
     {
-      title: "Hackathon Volunteer Representative",
+      title: "HackBattle Tech-Volunteer",
       organization: "IEEE Computer Society, VIT Vellore",
       event: "HackBattle (36-hour hackathon)",
       date: "September 2024",
       role: "Tech Panelist",
-      description: "Served as technical panelist reviewing diverse projects from AI-driven applications to full-stack development solutions.",
-      impact: "Enhanced event management skills while inspiring participants in their learning journey"
+      description: "Reviewed and judged over 100 projects ranging from AI-driven ideas to full-stack development solutions.",
+      impact: "Supported the hackathon evaluation process while guiding participants through technical feedback"
     }
   ];
 

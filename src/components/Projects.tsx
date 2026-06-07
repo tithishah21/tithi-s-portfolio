@@ -22,10 +22,10 @@ const Projects = () => {
         "Step-based resume creation with real-time validation",
         "AI-powered chatbot for personalized interview Q&A",
         "PDF export functionality with html2canvas",
-        "Global state management with performance optimization"
+        "Global state management with Zustand and deployment on Vercel"
       ],
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Formik", "React DOM", "JavaScript"],
-      achievements: ["Deployed with performance-first architecture", "Real-time form validation", "AI integration"],
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Formik", "Zustand", "Gemini API", "Vercel"],
+      achievements: ["Production internship project", "AI integration", "Responsive full-stack build"],
       links: [
         { name: "Live Preview", url: "https://resume-builder-project-flame.vercel.app", icon: ExternalLink }
       ],
@@ -36,7 +36,7 @@ const Projects = () => {
       subtitle: "BUDS of Christ Management System",
       category: "full-stack",
       status: "JPMC's Code for <Good> Project",
-      description: "Comprehensive platform for BUDS of Christ NGO built during J.P. Morgan's Code for Good Hackathon 2025. Selected among top 255/5000+ participants.",
+      description: "Comprehensive platform for BUDS of Christ NGO built during J.P. Morgan's Code for Good Hackathon 2025. Selected among top engineering students to build a social impact solution.",
       features: [
         "Custom forms for volunteer data management",
         "Document upload and real-time CSV syncing",
@@ -45,8 +45,8 @@ const Projects = () => {
         "Role-based dashboards for different user types",
         "Python ML model for predicting school dropout risks"
       ],
-      technologies: ["Next.js", "JavaScript", "Tailwind CSS", "Supabase", "Python", "Machine Learning"],
-      achievements: ["Top 255/5000+ participants", "Social impact solution", "ML integration"],
+      technologies: ["Next.js", "JavaScript", "Tailwind CSS", "Supabase", "Python", "ML"],
+      achievements: ["Social impact solution", "ML integration", "Hackathon build"],
       links: [],
       highlights: ["Social Impact", "ML Integration", "Hackathon"]
     },
@@ -55,13 +55,12 @@ const Projects = () => {
       subtitle: "TDA + GNN Research Project",
       category: "ai-ml",
       status: "Research Paper in Progress",
-      description: "Ongoing team research with two fellow VIT Vellore students under professor mentorship on detecting coordinated fraud rings in Bitcoin transaction networks using topological data analysis and graph neural networks.",
+      description: "Ongoing team research with fellow VIT Vellore students under professor mentorship on detecting coordinated fraud rings in Bitcoin transaction networks using topological data analysis and graph neural networks.",
       features: [
         "Works on the Elliptic Bitcoin Transaction Dataset for licit vs illicit transaction analysis",
         "Extracts persistent homology based topological features to capture cycles and higher-order fraud patterns",
         "Combines topology-derived signals with transaction attributes inside a GNN pipeline",
-        "Focuses on improving fraud ring detection in dense decentralized financial graphs",
-        "Research emphasizes both robustness and interpretability in fraud detection"
+        "Focuses on improving fraud ring detection in dense decentralized financial graphs"
       ],
       technologies: ["Python", "Machine Learning", "Artificial Intelligence", "TensorFlow", "Scikit-Learn", "MLflow"],
       achievements: ["Research paper in progress", "Team project with professor guidance", "Applied graph-based fraud detection"],
@@ -69,20 +68,53 @@ const Projects = () => {
       highlights: ["Research", "Team Project", "AI/ML"]
     },
     {
+      title: "E-Commerce Backend System",
+      subtitle: "Production-ready REST API backend",
+      category: "backend",
+      status: "Backend Project",
+      description: "Designed and built a scalable e-commerce backend with modular architecture, authentication, and relational data modeling.",
+      features: [
+        "RESTful APIs for products, carts, orders, and users",
+        "JWT-based authentication and authorization flows",
+        "Input validation middleware and structured SQL schemas",
+        "Modular MVC architecture with TypeScript type safety"
+      ],
+      technologies: ["Node.js", "Express", "TypeScript", "SQL", "REST APIs", "JWT"],
+      achievements: ["Scalable backend design", "Typed architecture", "Relational data modeling"],
+      links: [],
+      highlights: ["Backend", "APIs", "Type Safety"]
+    },
+    {
+      title: "JPMorgan Migration Project",
+      subtitle: "Legacy to modern card-based architecture",
+      category: "full-stack",
+      status: "Current Internship Project",
+      description: "Enterprise-scale full-stack migration project at JPMorgan Chase & Co., modernizing legacy systems used across global infrastructure.",
+      features: [
+        "Migration from legacy systems to a modern card-based architecture",
+        "Backend services and frontend integration workstreams",
+        "Agile collaboration on enterprise financial software",
+        "Exposure to cloud-native and data-heavy system design"
+      ],
+      technologies: ["Java", "Spring Boot", "SQL", "Kubernetes", "AWS", "Big Data"],
+      achievements: ["Enterprise-scale exposure", "Current SEP internship project", "Modernization initiative"],
+      links: [],
+      highlights: ["Enterprise", "Internship", "Full-Stack"]
+    },
+    {
       title: "PrepMate",
       subtitle: "Educational Platform",
       category: "ai-ml",
       status: "Hackathon Winner",
-      description: "An innovative educational platform designed for VIT students to upload PDFs and generate flashcards for quick revision. Won Best UI/UX Award at hackathon.",
+      description: "A hackathon-winning educational platform that converts PDFs and YouTube videos into flashcards and summaries using RAG workflows.",
       features: [
         "PDF to flashcard generation system",
         "YouTube video summarization using RAG",
-        "Interactive forum for collaborative learning",
-        "Responsive design optimized for student workflows",
-        "Real-time collaboration features"
+        "Study-focused revision flows for students",
+        "Fast content extraction for bite-sized learning"
       ],
-      technologies: ["React.js", "JavaScript", "Tailwind CSS", "Artificial Intelligence", "Machine Learning"],
-      achievements: ["Won Best UI/UX Award", "Innovative RAG implementation", "Student-focused design"],
+      technologies: ["RAG", "PDF Processing", "YouTube API", "AI/ML"],
+      achievements: ["Yantra'25 winner", "RAG implementation", "Student-focused product"],
       links: [],
       highlights: ["Award Winner", "AI/ML", "Education"]
     },
@@ -90,35 +122,34 @@ const Projects = () => {
       title: "Vimaanas Website",
       subtitle: "Aero Design Team Platform",
       category: "frontend",
-      status: "In Development",
-      description: "Frontend development for VIT Vellore's aero design team website, showcasing incredible UI/UX design and modern web development practices.",
+      status: "Frontend Project",
+      description: "Frontend development for VIT Vellore's aero-design team website, focused on clear team presentation and a polished responsive experience.",
       features: [
         "Modern responsive design",
         "Interactive team showcase",
         "Project portfolio display",
         "Performance-optimized architecture"
       ],
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React.js", "Front-End Development"],
-      achievements: ["Leadership role in IEEE-CS", "Modern design implementation"],
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React.js"],
+      achievements: ["IEEE-CS project", "Responsive frontend"],
       links: [
         { name: "Live Preview", url: "https://vimaanas.vercel.app/", icon: ExternalLink }
       ],
       highlights: ["UI/UX", "Team Project", "Leadership"]
     },
     {
-      title: "Hackbattle website",
-      subtitle: "Website for 36 hour hackathon conducted by my chapter - IEEE CS VIT",
+      title: "HackBattle Website",
+      subtitle: "Official hackathon website frontend",
       category: "frontend",
       status: "Completed",
-      description: "Frontend development of Hackbattle website, conducted at VIT Vellore ,by IEEE CS, showcasing exquisite animated ideas in web development.",
+      description: "Developed the frontend for IEEE-CS VIT's official HackBattle website with a strong visual identity and event-focused information architecture.",
       features: [
-        "About page with crazy marquee texts",
-        "Tracks page for hackathon",
-        "Speaker, Sponsors page and FAQs page with incredible UI UX",
-        "Integrated authentication via Firebase"
+        "Event landing pages and information flows",
+        "Responsive interface for speakers, sponsors, and FAQs",
+        "Modern animation and visual storytelling"
       ],
-      technologies: ["Next.js", "JavaScript", "Tailwind CSS", "CSS", "Front-End Development"],
-      achievements: ["Complex interface replication", "Institutional design"],
+      technologies: ["Next.js", "JavaScript", "Tailwind CSS", "CSS"],
+      achievements: ["Institutional website delivery", "Modern event frontend"],
       links: [
         { name: "Live Preview", url: "https://hackbattle.ieeecsvit.com/", icon: ExternalLink }
       ],
@@ -129,7 +160,7 @@ const Projects = () => {
       subtitle: "Productivity Enhancement Tool",
       category: "frontend",
       status: "Completed",
-      description: "A fully responsive task management website featuring eye-catching animations and intuitive user interface for productivity enhancement.",
+      description: "A fully responsive task management website featuring eye-catching animations and an intuitive interface built for everyday productivity.",
       features: [
         "Responsive design across all devices",
         "Eye-catching animations and transitions",
@@ -146,7 +177,7 @@ const Projects = () => {
       subtitle: "Technology News Platform",
       category: "frontend",
       status: "In Progress",
-      description: "A dedicated technology news website currently being optimized for full responsiveness and enhanced user experience.",
+      description: "A dedicated technology news website currently being optimized for responsiveness and a smoother reading experience.",
       features: [
         "Technology news aggregation",
         "Responsive design optimization",
@@ -157,24 +188,6 @@ const Projects = () => {
       achievements: ["News platform development", "UX optimization"],
       links: [],
       highlights: ["News Platform", "Responsive", "Optimization"]
-    },
-    {
-      title: "E-Commerce Backend System",
-      subtitle: "Pure Backend Commerce Project",
-      category: "backend",
-      status: "In Progress",
-      description: "Backend-focused ecommerce project currently being built to handle the core business logic of an online store, with emphasis on scalable APIs, data modeling, and clean service architecture.",
-      features: [
-        "REST API development for products, carts, orders, and users",
-        "Structured database design for ecommerce workflows and relationships",
-        "Authentication, validation, and role-aware request handling",
-        "Backend-first architecture designed for future frontend integration",
-        "Focus on maintainable services and production-style project structure"
-      ],
-      technologies: ["Node.js", "TypeScript", "MySQL", "Oracle SQL", "DBMS", "Git"],
-      achievements: ["Backend-focused system design", "Production-style API architecture"],
-      links: [],
-      highlights: ["Backend", "In Progress", "System Design"]
     },
     {
       title: "Amazon Website Clone",
@@ -220,33 +233,31 @@ const Projects = () => {
     { id: 'frontend', name: 'Frontend', count: projects.filter(p => p.category === 'frontend').length }
   ];
 
-  const filteredProjects = selectedCategory === 'all' 
-    ? projects 
+  const filteredProjects = selectedCategory === 'all'
+    ? projects
     : projects.filter(project => project.category === selectedCategory);
 
   const stats = [
-    { label: "Total Projects", value: "11+", icon: Code },
-    { label: "Technologies", value: "15+", icon: Zap },
-    { label: "Hackathons", value: "6+", icon: Award },
+    { label: "Total Projects", value: "12", icon: Code },
+    { label: "Technologies", value: "20+", icon: Zap },
+    { label: "Hackathon Wins", value: "1", icon: Award },
     { label: "Team Projects", value: "7+", icon: Users }
   ];
 
   return (
     <section id="projects" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg" style={{textShadow: '0 0 12px #3b82f6, 0 2px 8px #000'}}>
             Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Showcase of innovative solutions, award-winning projects, and technical expertise 
+            Showcase of innovative solutions, award-winning projects, and technical expertise
             across full-stack development, AI/ML, and modern web technologies.
           </p>
         </div>
 
-        {/* Project Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
@@ -262,45 +273,36 @@ const Projects = () => {
           })}
         </div>
 
-        {/* Project Categories */}
         <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="mt-28 lg:mt-0 md:mt-0 mb-12">
-        <TabsList className="w-full flex flex-col md:flex-row items-center md:justify-center gap-[0.3rem] bg-transparent p-0 border-none shadow-none">
-  {/* All categories in one row for md+ screens */}
-  <div className="flex justify-center gap-2 flex-wrap bg-[#0d0d0d] px-4 py-3 rounded-xl w-full md:w-auto">
-    {categories.map((category) => (
-      <TabsTrigger 
-        key={category.id} 
-        value={category.id}
-        className="px-4 py-2 rounded-md text-sm font-mono data-[state=active]:bg-primary/20 data-[state=active]:text-primary text-white"
-      >
-        {category.name}
-        <Badge className="ml-2 bg-primary/20 text-primary text-xs">{category.count}</Badge>
-      </TabsTrigger>
-    ))}
-  </div>
-</TabsList>
-
-
-
-
+          <TabsList className="w-full flex flex-col md:flex-row items-center md:justify-center gap-[0.3rem] bg-transparent p-0 border-none shadow-none">
+            <div className="flex justify-center gap-2 flex-wrap bg-[#0d0d0d] px-4 py-3 rounded-xl w-full md:w-auto">
+              {categories.map((category) => (
+                <TabsTrigger
+                  key={category.id}
+                  value={category.id}
+                  className="px-4 py-2 rounded-md text-sm font-mono data-[state=active]:bg-primary/20 data-[state=active]:text-primary text-white"
+                >
+                  {category.name}
+                  <Badge className="ml-2 bg-primary/20 text-primary text-xs">{category.count}</Badge>
+                </TabsTrigger>
+              ))}
+            </div>
+          </TabsList>
 
           <TabsContent value={selectedCategory} className="mt-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {filteredProjects.map((project, index) => (
-                <Card 
-                  key={index} 
-                  className="cyber-button border-primary/20 hover:border-primary/40 transition-all duration-300 group overflow-hidden"
-                >
+                <Card key={index} className="cyber-button border-primary/20 hover:border-primary/40 transition-all duration-300 group overflow-hidden">
                   {project.image && project.title !== "ResumeBuilderPro" && (
                     <div className="aspect-video overflow-hidden">
-                      <img 
-                        src={project.image} 
+                      <img
+                        src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                   )}
-                  
+
                   <CardHeader>
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1">
@@ -308,23 +310,19 @@ const Projects = () => {
                           {project.title}
                         </CardTitle>
                         <p className="text-muted-foreground text-sm mb-3">{project.subtitle}</p>
-                        
+
                         <div className="flex flex-wrap gap-2 mb-4">
                           <Badge className="bg-primary/20 text-primary border-primary/30">
                             {project.status}
                           </Badge>
                           {project.highlights.map((highlight, highlightIndex) => (
-                            <Badge 
-                              key={highlightIndex}
-                              variant="outline" 
-                              className="border-secondary/30 text-secondary text-xs"
-                            >
+                            <Badge key={highlightIndex} variant="outline" className="border-secondary/30 text-secondary text-xs">
                               {highlight}
                             </Badge>
                           ))}
                         </div>
                       </div>
-                      
+
                       {project.links.length > 0 && (
                         <div className="flex gap-2">
                           {project.links.map((link, linkIndex) => {
@@ -338,9 +336,8 @@ const Projects = () => {
                                 onClick={() => window.open(link.url, '_blank')}
                               >
                                 <Icon className="h-4 w-4" />
-                                <span>{link.name}</span> {/* 👈 This makes the button read: "↗ Live Demo" */}
+                                <span>{link.name}</span>
                               </Button>
-
                             );
                           })}
                         </div>
@@ -377,11 +374,7 @@ const Projects = () => {
                       <h5 className="font-semibold mb-2 text-primary">Technologies</h5>
                       <div className="flex flex-wrap gap-1">
                         {project.technologies.map((tech, techIndex) => (
-                          <Badge 
-                            key={techIndex}
-                            variant="outline"
-                            className="text-xs border-primary/30 text-primary hover:bg-primary/10"
-                          >
+                          <Badge key={techIndex} variant="outline" className="text-xs border-primary/30 text-primary hover:bg-primary/10">
                             {tech}
                           </Badge>
                         ))}
@@ -396,10 +389,7 @@ const Projects = () => {
                         </h5>
                         <div className="flex flex-wrap gap-1">
                           {project.achievements.map((achievement, achievementIndex) => (
-                            <Badge 
-                              key={achievementIndex}
-                              className="text-xs bg-secondary/20 text-secondary border-secondary/30"
-                            >
+                            <Badge key={achievementIndex} className="text-xs bg-secondary/20 text-secondary border-secondary/30">
                               {achievement}
                             </Badge>
                           ))}
@@ -413,10 +403,9 @@ const Projects = () => {
           </TabsContent>
         </Tabs>
 
-        {/* Call to Action */}
         <div className="text-center">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="cyber-button bg-gradient-primary hover:shadow-neon transition-all duration-300"
             onClick={() => window.open('https://github.com/tithishah21', '_blank')}
           >

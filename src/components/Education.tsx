@@ -10,23 +10,23 @@ const Education = () => {
       degree: "Computer Science Engineering Core",
       duration: "2023 - 2027",
       status: "Currently Pursuing",
-      cgpa: "8.99",
+      cgpa: "9.02",
       maxCgpa: "10.0",
-      description: "Pursuing comprehensive education in computer science with focus on modern software development, algorithms, and emerging technologies, while also co-authoring a research paper at VIT Vellore under professor mentorship.",
+      description: "Pursuing a strong computer science foundation with emphasis on software engineering, full-stack development, core CS fundamentals, and emerging technologies, while also co-authoring a research paper at VIT Vellore under professor mentorship.",
       highlights: [
-        "Strong academic performance with 8.99 CGPA",
+        "Strong academic performance with 9.02 CGPA",
         "Active participation in technical societies",
-        "Leadership roles in IEEE Computer Society",
-        "Hackathon participation and wins",
-        "Co-authoring a research paper on Bitcoin fraud ring detection with two fellow students under professor guidance"
+        "Leadership experience in IEEE Computer Society",
+        "Hands-on internships across startup and enterprise environments",
+        "Co-authoring a research paper on Bitcoin fraud ring detection with professor guidance"
       ],
       courses: [
         "Data Structures & Algorithms",
-        "Software Engineering",
+        "Operating Systems",
         "Database Management Systems",
-        "Machine Learning",
-        "Web Development",
-        "Computer Networks"
+        "Computer Networks",
+        "Compiler Design",
+        "Software Engineering"
       ]
     }
   ];
@@ -60,15 +60,15 @@ const Education = () => {
       status: "Ongoing"
     },
     {
-      title: "Machine Learning & AI",
-      provider: "Academic & Self-Study",
-      technologies: ["Python", "PyTorch", "scikit-learn", "MLFlow"],
+      title: "Enterprise Java & Backend Systems",
+      provider: "Internship & Projects",
+      technologies: ["Java", "Spring Boot", "SQL", "REST APIs"],
       status: "In Progress"
     },
     {
-      title: "Cloud Technologies",
+      title: "Cloud & Deployment",
       provider: "Hands-on Experience",
-      technologies: ["Vercel", "Supabase", "Firebase"],
+      technologies: ["AWS", "Kubernetes", "Vercel", "Supabase"],
       status: "Practical"
     }
   ];
@@ -76,26 +76,20 @@ const Education = () => {
   return (
     <section id="education" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg" style={{textShadow: '0 0 12px #3b82f6, 0 2px 8px #000'}}>
             Education
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
-          
         </div>
 
-        {/* Current Education */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-8 text-center">
             <span className="text-primary">Current Education</span>
           </h3>
-          
+
           {education.map((edu, index) => (
-            <Card 
-              key={index} 
-              className="cyber-button border-primary/20 hover:border-primary/40 transition-all duration-300 group"
-            >
+            <Card key={index} className="cyber-button border-primary/20 hover:border-primary/40 transition-all duration-300 group">
               <CardHeader>
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                   <div className="flex-1">
@@ -117,7 +111,7 @@ const Education = () => {
                         <span>{edu.duration}</span>
                       </div>
                     </div>
-                    
+
                     <div className="flex flex-wrap gap-2 mb-4">
                       <Badge className="bg-primary/20 text-primary border-primary/30">
                         {edu.status}
@@ -162,11 +156,7 @@ const Education = () => {
                     <h5 className="font-semibold mb-3 text-secondary">Key Courses</h5>
                     <div className="flex flex-wrap gap-2">
                       {edu.courses.map((course, courseIndex) => (
-                        <Badge 
-                          key={courseIndex}
-                          variant="outline"
-                          className="border-primary/30 text-primary hover:bg-primary/10 transition-colors"
-                        >
+                        <Badge key={courseIndex} variant="outline" className="border-primary/30 text-primary hover:bg-primary/10 transition-colors">
                           {course}
                         </Badge>
                       ))}
@@ -178,18 +168,14 @@ const Education = () => {
           ))}
         </div>
 
-        {/* Previous Education */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-8 text-center">
             <span className="text-secondary">Previous Education</span>
           </h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {previousEducation.map((edu, index) => (
-              <Card 
-                key={index} 
-                className="cyber-button border-secondary/20 hover:border-secondary/40 transition-all duration-300"
-              >
+              <Card key={index} className="cyber-button border-secondary/20 hover:border-secondary/40 transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-xl text-secondary">{edu.level}</CardTitle>
                   <div className="flex flex-col gap-2 text-sm text-muted-foreground">
@@ -207,14 +193,14 @@ const Education = () => {
                     </div>
                   </div>
                 </CardHeader>
-                
+
                 <CardContent>
                   <div className="mb-4">
                     <Badge className="bg-primary/20 text-primary border-primary/30 text-lg px-3 py-1">
                       {edu.achievement}
                     </Badge>
                   </div>
-                  
+
                   <p className="text-muted-foreground mb-4 leading-relaxed">
                     {edu.description}
                   </p>
@@ -225,17 +211,13 @@ const Education = () => {
                       <p className="text-sm text-muted-foreground">{edu.specialAchievement}</p>
                     </div>
                   )}
-                  
+
                   {edu.subjects && (
                     <div>
                       <h6 className="font-medium mb-2 text-sm">Subjects</h6>
                       <div className="flex flex-wrap gap-1">
                         {edu.subjects.map((subject, subjectIndex) => (
-                          <Badge 
-                            key={subjectIndex}
-                            variant="outline"
-                            className="text-xs border-secondary/30 text-secondary"
-                          >
+                          <Badge key={subjectIndex} variant="outline" className="text-xs border-secondary/30 text-secondary">
                             {subject}
                           </Badge>
                         ))}
@@ -248,37 +230,23 @@ const Education = () => {
           </div>
         </div>
 
-        {/* Certifications & Skills */}
         <div>
           <h3 className="text-2xl font-semibold mb-8 text-center">
             <span className="text-accent">Technical Certifications & Learning</span>
           </h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
-              <Card 
-                key={index} 
-                className="cyber-button border-accent/20 hover:border-accent/40 transition-all duration-300 text-center"
-              >
+              <Card key={index} className="cyber-button border-accent/20 hover:border-accent/40 transition-all duration-300 text-center">
                 <CardHeader>
                   <CardTitle className="text-lg text-accent">{cert.title}</CardTitle>
                   <p className="text-sm text-muted-foreground">{cert.provider}</p>
                 </CardHeader>
-                
                 <CardContent>
-                  <div className="mb-4">
-                    <Badge className="bg-accent/20 text-accent border-accent/30">
-                      {cert.status}
-                    </Badge>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-1 justify-center">
+                  <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">{cert.status}</Badge>
+                  <div className="flex flex-wrap justify-center gap-2">
                     {cert.technologies.map((tech, techIndex) => (
-                      <Badge 
-                        key={techIndex}
-                        variant="outline"
-                        className="text-xs border-primary/30 text-primary"
-                      >
+                      <Badge key={techIndex} variant="outline" className="text-xs border-accent/30 text-accent">
                         {tech}
                       </Badge>
                     ))}

@@ -49,8 +49,8 @@ const Footer = () => {
             <div className="mb-6">
               <h3 className="text-2xl font-bold cyber-text mb-4">Tithi's portfolio</h3>
               <p className="text-muted-foreground leading-relaxed max-w-md">
-                Full-Stack Developer & Computer Science Engineering student passionate about 
-                transforming innovative ideas into meaningful technological solutions.
+                Pre-final year CSE student and SEP intern at JPMorgan Chase & Co., passionate about
+                building scalable full-stack products and thoughtful developer experiences.
               </p>
             </div>
             
@@ -59,10 +59,10 @@ const Footer = () => {
                 Full-Stack Developer
               </Badge>
               <Badge className="bg-secondary/20 text-secondary border-secondary/30">
-                CS Engineering Student
+                SEP Intern
               </Badge>
               <Badge className="bg-accent/20 text-accent border-accent/30">
-                Problem Solver
+                CSE @ VIT Vellore
               </Badge>
             </div>
 

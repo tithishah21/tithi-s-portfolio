@@ -1,6 +1,4 @@
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Download, Github, Linkedin, Mail, MapPin, Phone, Rocket, Target, Briefcase } from 'lucide-react';
+import { Download, Rocket, Target, Briefcase, Award } from 'lucide-react';
 import Particles from "react-tsparticles";
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
@@ -55,10 +53,10 @@ const AnimatedTerminalPanel = () => {
 };
 
 const stats = [
-  { icon: <Rocket className="text-blue-400 w-6 h-6 mb-1" />, label: 'Projects', value: 11, suffix: '+' },
-  { icon: <Target className="text-blue-400 w-6 h-6 mb-1" />, label: 'Hackathons', value: 6 },
-  { icon: <Briefcase className="text-blue-400 w-6 h-6 mb-1" />, label: 'Internships', value: 1 },
-  { icon: <Github className="text-blue-400 w-6 h-6 mb-1" />, label: 'Contributions', value: 687, suffix: '+' },
+  { icon: <Rocket className="text-blue-400 w-6 h-6 mb-1" />, label: 'Projects', value: 12, suffix: '+' },
+  { icon: <Briefcase className="text-blue-400 w-6 h-6 mb-1" />, label: 'Internships', value: 2 },
+  { icon: <Award className="text-blue-400 w-6 h-6 mb-1" />, label: 'Awards', value: 3 },
+  { icon: <Target className="text-blue-400 w-6 h-6 mb-1" />, label: 'CGPA', value: 9.02 },
 ];
 
 const AnimatedCounter = ({ to, duration = 1.2 }) => {
@@ -67,11 +65,16 @@ const AnimatedCounter = ({ to, duration = 1.2 }) => {
     let start = 0;
     const end = to;
     if (start === end) return;
-    let incrementTime = Math.abs(Math.floor((duration * 1000) / end));
-    let timer = setInterval(() => {
-      start += 1;
-      setCount(start);
-      if (start === end) clearInterval(timer);
+    const steps = Number.isInteger(end) ? end : 90;
+    let incrementTime = Math.abs(Math.floor((duration * 1000) / steps));
+    const timer = setInterval(() => {
+      start += Number.isInteger(end) ? 1 : 0.1;
+      const nextValue = Number.isInteger(end) ? start : Number(start.toFixed(2));
+      setCount(nextValue);
+      if (start >= end) {
+        setCount(end);
+        clearInterval(timer);
+      }
     }, incrementTime);
     return () => clearInterval(timer);
   }, [to, duration]);
@@ -101,19 +104,18 @@ const StatsPanel = () => (
 
 const Hero = () => (
   <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-4 md:px-12 py-12 relative overflow-hidden bg-background">
-    {/* Left Column */}
     <div className="w-full md:w-1/2 flex flex-col items-center md:items-start z-10">
       <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-white text-center md:text-left">
         Hi, I'm<br />
         <span className="cyber-text">TITHI SHAH</span>
       </h1>
       <div className="text-lg md:text-xl lg:text-2xl font-semibold mb-8 text-gray-300 text-center md:text-left">
-        Full-Stack Developer & Computer Science Student
+        SEP Intern at JPMorgan Chase & Co. | Pre-final Year CSE Student
       </div>
       <div className="flex justify-center md:justify-start w-full mb-4">
         <a
           href="/TithiShah_Resume.pdf"
-          download="Tithi_Shah_Resume_Feb_2026.pdf"
+          download="Tithi_Shah_Resume_June_2026.pdf"
           className="cyber-button border border-blue-400 hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-6 md:px-40 py-3 rounded-lg font-semibold text-white shadow-md text-center"
         >
           <Download className="inline-block mr-2 w-5 h-5" />
@@ -121,14 +123,11 @@ const Hero = () => (
         </a>
       </div>
 
-
       <StatsPanel />
     </div>
-    {/* Right Column */}
     <div className="w-full md:w-1/2 flex justify-center items-center z-10">
       <AnimatedTerminalPanel />
     </div>
-    {/* Scroll Indicator */}
     <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
       <span className="scroll-hint-text">Scroll to explore <span className="scroll-arrow"></span></span>
     </div>
