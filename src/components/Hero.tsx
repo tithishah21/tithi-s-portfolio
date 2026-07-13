@@ -56,7 +56,7 @@ const stats = [
   { icon: <Rocket className="text-blue-400 w-6 h-6 mb-1" />, label: 'Projects', value: 12, suffix: '+' },
   { icon: <Briefcase className="text-blue-400 w-6 h-6 mb-1" />, label: 'Internships', value: 2 },
   { icon: <Award className="text-blue-400 w-6 h-6 mb-1" />, label: 'Awards', value: 3 },
-  { icon: <Target className="text-blue-400 w-6 h-6 mb-1" />, label: 'CGPA', value: 9.02 },
+  { icon: <Target className="text-blue-400 w-6 h-6 mb-1" />, label: 'CGPA', value: 9.04 },
 ];
 
 const AnimatedCounter = ({ to, duration = 1.2 }) => {
@@ -110,12 +110,12 @@ const Hero = () => (
         <span className="cyber-text">TITHI SHAH</span>
       </h1>
       <div className="text-lg md:text-xl lg:text-2xl font-semibold mb-8 text-gray-300 text-center md:text-left">
-        SEP Intern at JPMorgan Chase & Co. | Pre-final Year CSE Student
+        Completed SEP Internship at JPMorgan Chase & Co. | Pre-final Year CSE Student
       </div>
       <div className="flex justify-center md:justify-start w-full mb-4">
         <a
           href="/TithiShah_Resume.pdf"
-          download="Tithi_Shah_Resume_June_2026.pdf"
+          download="Tithi_Shah_Resume_July_2026.pdf"
           className="cyber-button border border-blue-400 hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-6 md:px-40 py-3 rounded-lg font-semibold text-white shadow-md text-center"
         >
           <Download className="inline-block mr-2 w-5 h-5" />

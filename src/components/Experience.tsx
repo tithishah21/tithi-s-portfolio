@@ -9,18 +9,18 @@ const Experience = () => {
       title: "Software Engineering Program (SEP) Intern",
       company: "JPMorgan Chase & Co.",
       location: "India",
-      duration: "May 2026 - Present",
-      status: "Current Position",
+      duration: "May 2026 - July 2026",
+      status: "Completed",
       type: "Internship",
       project: "Legacy to modern card-based architecture migration",
-      description: "Working on an enterprise-scale full-stack migration project that modernizes legacy Olympics-era systems used across JPMorgan's global infrastructure.",
+      description: "Worked on an enterprise-scale full-stack migration project that modernized legacy Olympics-era systems used across JPMorgan's global infrastructure.",
       achievements: [
-        "Contributing to migration from legacy systems to a modern card-based architecture",
-        "Building across backend services and frontend integration in a large financial software stack",
-        "Working with Java, Spring Boot, SQL, Kubernetes, AWS, and Big Data tools",
-        "Collaborating in an Agile team environment on enterprise-scale systems"
+        "Contributed to migration from legacy systems to a modern card-based architecture",
+        "Built across backend services and frontend integration in a large financial software stack",
+        "Worked with Java, Spring Boot, SQL, Kubernetes, AWS, Spark, Autosys, and Big Data tools",
+        "Collaborated in an Agile team environment on enterprise-scale systems"
       ],
-      technologies: ["Java", "Spring Boot", "SQL", "Kubernetes", "AWS", "Big Data", "Agile"]
+      technologies: ["Java", "Spring Boot", "SQL", "Kubernetes", "AWS", "Spark", "Autosys", "Big Data", "Agile"]
     },
     {
       title: "SDE Intern",

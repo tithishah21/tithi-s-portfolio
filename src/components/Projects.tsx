@@ -88,16 +88,16 @@ const Projects = () => {
       title: "JPMorgan Migration Project",
       subtitle: "Legacy to modern card-based architecture",
       category: "full-stack",
-      status: "Current Internship Project",
-      description: "Enterprise-scale full-stack migration project at JPMorgan Chase & Co., modernizing legacy systems used across global infrastructure.",
+      status: "Completed Internship Project",
+      description: "Enterprise-scale full-stack migration project completed at JPMorgan Chase & Co., modernizing legacy systems used across global infrastructure.",
       features: [
-        "Migration from legacy systems to a modern card-based architecture",
-        "Backend services and frontend integration workstreams",
-        "Agile collaboration on enterprise financial software",
-        "Exposure to cloud-native and data-heavy system design"
+        "Contributed to migration from legacy systems to a modern card-based architecture",
+        "Built across backend services and frontend integration workstreams",
+        "Collaborated in Agile workflows on enterprise financial software",
+        "Gained exposure to cloud-native and data-heavy system design"
       ],
-      technologies: ["Java", "Spring Boot", "SQL", "Kubernetes", "AWS", "Big Data"],
-      achievements: ["Enterprise-scale exposure", "Current SEP internship project", "Modernization initiative"],
+      technologies: ["Java", "Spring Boot", "SQL", "Kubernetes", "AWS", "Spark", "Autosys", "Big Data"],
+      achievements: ["Enterprise-scale exposure", "Completed SEP internship project", "Modernization initiative"],
       links: [],
       highlights: ["Enterprise", "Internship", "Full-Stack"]
     },

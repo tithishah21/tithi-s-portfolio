@@ -8,7 +8,7 @@ const About = () => {
     },
     {
       category: "Backend & Data",
-      items: ["Node.js", "Express.js", "Java", "Spring Boot", "Supabase", "MySQL", "Oracle SQL", "PostgreSQL", "DBMS", "SQL"]
+      items: ["Node.js", "Express.js", "Java", "Spring Boot", "Supabase", "MySQL", "Oracle SQL", "PostgreSQL", "DBMS", "SQL", "Apache Spark"]
     },
     {
       category: "AI / ML",
@@ -16,7 +16,7 @@ const About = () => {
     },
     {
       category: "Cloud & Tools",
-      items: ["Amazon Web Services (AWS)", "Cloud Computing", "Kubernetes", "Docker", "Git", "GitHub", "Vercel", "ESLint", "Packet Tracer"]
+      items: ["Amazon Web Services (AWS)", "Cloud Computing", "Kubernetes", "Docker", "Autosys", "Git", "GitHub", "Vercel", "ESLint", "Packet Tracer"]
     },
     {
       category: "Core CS",
@@ -27,8 +27,8 @@ const About = () => {
   const highlights = [
     {
       icon: Briefcase,
-      title: "SEP Intern @ JPMorgan Chase & Co.",
-      description: "Currently contributing to a full-stack migration initiative modernizing legacy systems into a card-based architecture using Java, Spring Boot, SQL, Kubernetes, AWS, and Big Data tooling."
+      title: "Completed SEP Internship @ JPMorgan Chase & Co.",
+      description: "Contributed to a full-stack migration initiative modernizing legacy systems into a card-based architecture using Java, Spring Boot, SQL, Kubernetes, AWS, Spark, Autosys, and Big Data tooling."
     },
     {
       icon: Terminal,
@@ -48,7 +48,7 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "CSE @ VIT Vellore",
-      description: "Pre-final year B.Tech Computer Science Engineering (Core) student at VIT Vellore with a CGPA of 9.02."
+      description: "Pre-final year B.Tech Computer Science Engineering (Core) student at VIT Vellore with a CGPA of 9.04."
     },
     {
       icon: UserCheck,

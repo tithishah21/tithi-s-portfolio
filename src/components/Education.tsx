@@ -10,11 +10,11 @@ const Education = () => {
       degree: "Computer Science Engineering Core",
       duration: "2023 - 2027",
       status: "Currently Pursuing",
-      cgpa: "9.02",
+      cgpa: "9.04",
       maxCgpa: "10.0",
       description: "Pursuing a strong computer science foundation with emphasis on software engineering, full-stack development, core CS fundamentals, and emerging technologies, while also co-authoring a research paper at VIT Vellore under professor mentorship.",
       highlights: [
-        "Strong academic performance with 9.02 CGPA",
+        "Strong academic performance with 9.04 CGPA",
         "Active participation in technical societies",
         "Leadership experience in IEEE Computer Society",
         "Hands-on internships across startup and enterprise environments",

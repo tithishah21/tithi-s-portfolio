@@ -5,15 +5,15 @@ import { Trophy, Users, Calendar, Award, Target, Zap, Star, TrendingUp } from 'l
 const Achievements = () => {
   const majorAchievements = [
     {
-      title: "Current SEP Intern at JPMorgan Chase & Co.",
+      title: "Completed SEP Internship at JPMorgan Chase & Co.",
       subtitle: "Software Engineering Program Internship",
       category: "Professional Milestone",
-      description: "Currently working on an enterprise-scale modernization effort at JPMorgan Chase & Co., contributing to full-stack migration work across global financial systems.",
+      description: "Worked on an enterprise-scale modernization effort at JPMorgan Chase & Co., contributing to full-stack migration work across global financial systems.",
       details: [
-        "Working on a legacy-to-modern card-based architecture migration",
-        "Gaining hands-on experience with Java, Spring Boot, SQL, Kubernetes, AWS, and Big Data tools"
+        "Worked on a legacy-to-modern card-based architecture migration",
+        "Gained hands-on experience with Java, Spring Boot, SQL, Kubernetes, AWS, Spark, Autosys, and Big Data tools"
       ],
-      impact: "Current Role",
+      impact: "Completed Internship",
       date: "2026",
       icon: Trophy,
       color: "primary"
@@ -130,12 +130,12 @@ const Achievements = () => {
       category: "Academic"
     },
     {
-      title: "9.02 CGPA at VIT Vellore",
+      title: "9.04 CGPA at VIT Vellore",
       description: "Maintaining excellent academic performance in Computer Science Engineering",
       category: "Current"
     },
     {
-      title: "Current SEP Intern at JPMorgan Chase & Co.",
+      title: "Completed SEP Internship at JPMorgan Chase & Co.",
       description: "Gained enterprise software engineering exposure through a full-stack modernization internship",
       category: "Professional"
     }
