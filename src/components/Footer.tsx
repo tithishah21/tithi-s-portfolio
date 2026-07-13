@@ -10,8 +10,7 @@ const Footer = () => {
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Education', href: '#education' },
-    { name: 'Achievements', href: '#achievements' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Achievements', href: '#achievements' }
   ];
 
   const socialLinks = [
@@ -66,11 +65,8 @@ const Footer = () => {
               </Badge>
             </div>
 
-            {/* Contact Info */}
             <div className="space-y-2 text-sm text-muted-foreground">
-              <div>📍 Ahmedabad, Gujarat, India</div>
               <div>📧 shahtithi21@gmail.com</div>
-              <div>📱 +91 8780358139</div>
             </div>
           </div>
 

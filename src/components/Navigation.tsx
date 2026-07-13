@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Code, User, Briefcase, BookOpen, Trophy, Mail } from 'lucide-react';
+import { Menu, X, Code, User, Briefcase, BookOpen, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
@@ -21,7 +21,6 @@ const Navigation = () => {
     { name: 'Projects', href: '#projects', icon: Code },
     { name: 'Education', href: '#education', icon: BookOpen },
     { name: 'Achievements', href: '#achievements', icon: Trophy },
-    { name: 'Contact', href: '#contact', icon: Mail },
   ];
 
   const scrollToSection = (href: string) => {
