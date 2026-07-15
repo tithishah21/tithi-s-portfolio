@@ -110,7 +110,7 @@ const Hero = () => (
         <span className="cyber-text">TITHI SHAH</span>
       </h1>
       <div className="text-lg md:text-xl lg:text-2xl font-semibold mb-8 text-gray-300 text-center md:text-left">
-        Completed SEP Internship at JPMorgan Chase & Co. | Pre-final Year CSE Student
+        Completed SEP Internship at JPMorgan Chase & Co. | Final Year CSE Student
       </div>
       <div className="flex justify-center md:justify-start w-full mb-4">
         <a

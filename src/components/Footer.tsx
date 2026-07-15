@@ -48,7 +48,7 @@ const Footer = () => {
             <div className="mb-6">
               <h3 className="text-2xl font-bold cyber-text mb-4">Tithi's portfolio</h3>
               <p className="text-muted-foreground leading-relaxed max-w-md">
-                Pre-final year CSE student and former SEP intern at JPMorgan Chase & Co., passionate about
+                Final year CSE student and former SEP intern at JPMorgan Chase & Co., passionate about
                 building scalable full-stack products and thoughtful developer experiences.
               </p>
             </div>

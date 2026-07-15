@@ -48,7 +48,7 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "CSE @ VIT Vellore",
-      description: "Pre-final year B.Tech Computer Science Engineering (Core) student at VIT Vellore with a CGPA of 9.04."
+      description: "Final year B.Tech Computer Science Engineering (Core) student at VIT Vellore with a CGPA of 9.04."
     },
     {
       icon: UserCheck,
