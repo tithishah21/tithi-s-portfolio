@@ -8,10 +8,11 @@ const Achievements = () => {
       title: "Completed SEP Internship at JPMorgan Chase & Co.",
       subtitle: "Software Engineering Program Internship",
       category: "Professional Milestone",
-      description: "Worked on an enterprise-scale modernization effort at JPMorgan Chase & Co., contributing to full-stack migration work across global financial systems.",
+      description: "Worked on an enterprise-scale modernization effort at JPMorgan Chase & Co., contributing to full-stack migration work across global financial systems and co-developing Builder Brews during an intern AI challenge hackathon.",
       details: [
         "Worked on a legacy-to-modern card-based architecture migration",
-        "Gained hands-on experience with Java, Spring Boot, SQL, Kubernetes, AWS, Spark, Autosys, and Big Data tools"
+        "Co-developed Builder Brews, a full-stack coffee shop application, as a team project in the intern AI challenge hackathon",
+        "Gained hands-on experience with Java, Spring Boot, SQL, Kubernetes, AWS, Spark, Autosys, React, JavaScript, testing, SQLite, and Big Data tools"
       ],
       impact: "Completed Internship",
       date: "2026",
@@ -136,7 +137,7 @@ const Achievements = () => {
     },
     {
       title: "Completed SEP Internship at JPMorgan Chase & Co.",
-      description: "Gained enterprise software engineering exposure through a full-stack modernization internship",
+      description: "Gained enterprise software engineering exposure through a full-stack modernization internship and an intern AI challenge team project called Builder Brews",
       category: "Professional"
     }
   ];

@@ -102,6 +102,23 @@ const Projects = () => {
       highlights: ["Enterprise", "Internship", "Full-Stack"]
     },
     {
+      title: "Builder Brews",
+      subtitle: "Coffee Shop Application",
+      category: "full-stack",
+      status: "JPMC Intern AI Challenge Team Project",
+      description: "Full end-to-end coffee shop application built as a team project during JPMorgan Chase's intern AI challenge hackathon.",
+      features: [
+        "Built the application as a collaborative intern hackathon project",
+        "Delivered an end-to-end full-stack experience for coffee shop workflows",
+        "Implemented frontend flows in React and JavaScript",
+        "Used testing practices and SQLite-backed data persistence"
+      ],
+      technologies: ["React", "JavaScript", "Testing", "SQLite"],
+      achievements: ["Team project", "Full-stack hackathon build", "JPMC intern AI challenge"],
+      links: [],
+      highlights: ["Team Project", "Hackathon", "Full-Stack"]
+    },
+    {
       title: "PrepMate",
       subtitle: "Educational Platform",
       category: "ai-ml",
@@ -238,10 +255,10 @@ const Projects = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   const stats = [
-    { label: "Total Projects", value: "12", icon: Code },
+    { label: "Total Projects", value: "13", icon: Code },
     { label: "Technologies", value: "20+", icon: Zap },
     { label: "Hackathon Wins", value: "1", icon: Award },
-    { label: "Team Projects", value: "7+", icon: Users }
+    { label: "Team Projects", value: "8+", icon: Users }
   ];
 
   return (

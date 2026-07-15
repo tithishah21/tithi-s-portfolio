@@ -28,7 +28,7 @@ const About = () => {
     {
       icon: Briefcase,
       title: "Completed SEP Internship @ JPMorgan Chase & Co.",
-      description: "Contributed to a full-stack migration initiative modernizing legacy systems into a card-based architecture using Java, Spring Boot, SQL, Kubernetes, AWS, Spark, Autosys, and Big Data tooling."
+      description: "Contributed to a full-stack migration initiative modernizing legacy systems into a card-based architecture, and co-developed Builder Brews, a coffee shop application built for an intern AI challenge hackathon, using Java, Spring Boot, SQL, Kubernetes, AWS, Spark, Autosys, React, JavaScript, testing, and SQLite."
     },
     {
       icon: Terminal,

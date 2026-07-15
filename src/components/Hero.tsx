@@ -53,7 +53,7 @@ const AnimatedTerminalPanel = () => {
 };
 
 const stats = [
-  { icon: <Rocket className="text-blue-400 w-6 h-6 mb-1" />, label: 'Projects', value: 12, suffix: '+' },
+  { icon: <Rocket className="text-blue-400 w-6 h-6 mb-1" />, label: 'Projects', value: 13, suffix: '+' },
   { icon: <Briefcase className="text-blue-400 w-6 h-6 mb-1" />, label: 'Internships', value: 2 },
   { icon: <Award className="text-blue-400 w-6 h-6 mb-1" />, label: 'Awards', value: 3 },
   { icon: <Target className="text-blue-400 w-6 h-6 mb-1" />, label: 'CGPA', value: 9.04 },

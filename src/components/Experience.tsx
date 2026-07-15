@@ -12,15 +12,16 @@ const Experience = () => {
       duration: "May 2026 - July 2026",
       status: "Completed",
       type: "Internship",
-      project: "Legacy to modern card-based architecture migration",
-      description: "Worked on an enterprise-scale full-stack migration project that modernized legacy Olympics-era systems used across JPMorgan's global infrastructure.",
+      project: "Legacy migration and Builder Brews intern AI challenge project",
+      description: "Worked on an enterprise-scale full-stack migration project that modernized legacy Olympics-era systems used across JPMorgan's global infrastructure, and co-developed Builder Brews, a full end-to-end coffee shop application created as part of an intern AI challenge hackathon.",
       achievements: [
         "Contributed to migration from legacy systems to a modern card-based architecture",
         "Built across backend services and frontend integration in a large financial software stack",
-        "Worked with Java, Spring Boot, SQL, Kubernetes, AWS, Spark, Autosys, and Big Data tools",
+        "Co-developed Builder Brews as a team project, delivering a full-stack coffee shop application during the intern AI challenge hackathon",
+        "Worked with Java, Spring Boot, SQL, Kubernetes, AWS, Spark, Autosys, React, JavaScript, testing, SQLite, and Big Data tools",
         "Collaborated in an Agile team environment on enterprise-scale systems"
       ],
-      technologies: ["Java", "Spring Boot", "SQL", "Kubernetes", "AWS", "Spark", "Autosys", "Big Data", "Agile"]
+      technologies: ["Java", "Spring Boot", "SQL", "Kubernetes", "AWS", "Spark", "Autosys", "React", "JavaScript", "Testing", "SQLite", "Big Data", "Agile"]
     },
     {
       title: "SDE Intern",
