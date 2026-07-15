@@ -115,7 +115,7 @@ const Hero = () => (
       <div className="flex justify-center md:justify-start w-full mb-4">
         <a
           href="/TithiShah_Resume.pdf"
-          download="Tithi_Shah_Resume_July_2026.pdf"
+          download="Tithi_Shah_Resume_July_15_2026.pdf"
           className="cyber-button border border-blue-400 hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-6 md:px-40 py-3 rounded-lg font-semibold text-white shadow-md text-center"
         >
           <Download className="inline-block mr-2 w-5 h-5" />
