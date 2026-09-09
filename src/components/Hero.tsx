@@ -53,9 +53,9 @@ const AnimatedTerminalPanel = () => {
 };
 
 const stats = [
-  { icon: <Rocket className="text-blue-400 w-6 h-6 mb-1" />, label: 'Projects', value: 13, suffix: '+' },
+  { icon: <Rocket className="text-blue-400 w-6 h-6 mb-1" />, label: 'Projects', value: 16, suffix: '+' },
   { icon: <Briefcase className="text-blue-400 w-6 h-6 mb-1" />, label: 'Internships', value: 2 },
-  { icon: <Award className="text-blue-400 w-6 h-6 mb-1" />, label: 'Awards', value: 3 },
+  { icon: <Award className="text-blue-400 w-6 h-6 mb-1" />, label: 'Awards', value: 4 },
   { icon: <Target className="text-blue-400 w-6 h-6 mb-1" />, label: 'CGPA', value: 9.04 },
 ];
 
@@ -110,16 +110,17 @@ const Hero = () => (
         <span className="cyber-text">TITHI SHAH</span>
       </h1>
       <div className="text-lg md:text-xl lg:text-2xl font-semibold mb-8 text-gray-300 text-center md:text-left">
-        Completed SEP Internship at JPMorgan Chase & Co. | Final Year CSE Student
+        Upcoming Software Engineer @ JPMC | Former SEP Intern @ JPMC | Final Year @ VIT Vellore
       </div>
       <div className="flex justify-center md:justify-start w-full mb-4">
         <a
           href="/TithiShah_Resume.pdf"
-          download="Tithi_Shah_Resume_July_15_2026.pdf"
+          target="_blank"
+          rel="noreferrer"
           className="cyber-button border border-blue-400 hover:scale-105 hover:text-blue-400 hover:shadow-neon transition-all duration-300 px-6 md:px-40 py-3 rounded-lg font-semibold text-white shadow-md text-center"
         >
           <Download className="inline-block mr-2 w-5 h-5" />
-          Download Resume
+          View Resume
         </a>
       </div>
 

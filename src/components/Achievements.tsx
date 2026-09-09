@@ -121,13 +121,23 @@ const Achievements = () => {
 
   const recognitions = [
     {
+      title: "Microsoft Tech Talk Recognition",
+      description: "Awarded a Microsoft prize for correctly answering a technical question during a Microsoft campus tech talk.",
+      category: "Technical Recognition"
+    },
+    {
+      title: "IEEE INDISCON 2026 Publication",
+      description: "EOG-Based Ocular Activity Recognition Using a Deep Hybrid Sequence Modeling Framework was accepted at the 7th IEEE India Council International Subsections Conference (INDISCON 2026).",
+      category: "Publication"
+    },
+    {
       title: "95 Percentile JEE Mains 2023",
       description: "Exceptional performance in one of India's most competitive engineering entrance examinations",
       category: "Academic"
     },
     {
-      title: "97.6% CBSE XII Boards",
-      description: "Outstanding results in higher secondary education demonstrating academic consistency",
+      title: "97.6% CBSE Class X",
+      description: "Outstanding secondary-school results demonstrating academic consistency.",
       category: "Academic"
     },
     {
@@ -136,9 +146,9 @@ const Achievements = () => {
       category: "Current"
     },
     {
-      title: "Completed SEP Internship at JPMorgan Chase & Co.",
-      description: "Gained enterprise software engineering exposure through a full-stack modernization internship and an intern AI challenge team project called Builder Brews",
-      category: "Professional"
+      title: "AWS Certified Cloud Practitioner",
+      description: "Earned the AWS Certified Cloud Practitioner credential with a score of 981/1000.",
+      category: "Certification"
     }
   ];
 

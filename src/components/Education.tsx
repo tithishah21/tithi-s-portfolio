@@ -54,22 +54,34 @@ const Education = () => {
 
   const certifications = [
     {
-      title: "Full-Stack Web Development",
-      provider: "Self-Taught & Projects",
-      technologies: ["React", "Next.js", "Node.js", "TypeScript"],
-      status: "Ongoing"
+      title: "AWS Certified Cloud Practitioner",
+      provider: "Amazon Web Services",
+      technologies: ["AWS Cloud", "Cloud Security", "Billing", "Architecture"],
+      status: "Certified - 981/1000"
     },
     {
-      title: "Enterprise Java & Backend Systems",
-      provider: "Internship & Projects",
-      technologies: ["Java", "Spring Boot", "SQL", "REST APIs"],
-      status: "In Progress"
+      title: "Python & DSA in Java",
+      provider: "Udemy Learning",
+      technologies: ["Python", "Java", "Data Structures", "Algorithms"],
+      status: "Completed"
     },
     {
-      title: "Cloud & Deployment",
-      provider: "Hands-on Experience",
-      technologies: ["AWS", "Kubernetes", "Vercel", "Supabase"],
-      status: "Practical"
+      title: "C/C++ Programming",
+      provider: "Udemy Learning",
+      technologies: ["C", "C++", "OOP", "Problem Solving"],
+      status: "Completed"
+    },
+    {
+      title: "Node.js Development",
+      provider: "Udemy Learning",
+      technologies: ["Node.js", "Express", "REST APIs", "Backend Development"],
+      status: "Completed"
+    },
+    {
+      title: "Generative AI & Machine Learning",
+      provider: "Udemy Learning",
+      technologies: ["Generative AI", "Machine Learning", "PyTorch", "Prompt Engineering"],
+      status: "Completed"
     }
   ];
 
@@ -235,7 +247,7 @@ const Education = () => {
             <span className="text-accent">Technical Certifications & Learning</span>
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
               <Card key={index} className="cyber-button border-accent/20 hover:border-accent/40 transition-all duration-300 text-center">
                 <CardHeader>

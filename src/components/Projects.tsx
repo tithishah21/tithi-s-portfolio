@@ -3,13 +3,65 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ExternalLink, Github, Award, Zap, Code, Users, Target } from 'lucide-react';
+import { ExternalLink, Github, Award, Zap, Code, Target } from 'lucide-react';
 import resumeBuilderMockup from '@/assets/resume-builder-mockup.jpg';
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const projects = [
+    {
+      title: "LabelTruth",
+      subtitle: "AI-Powered Food Label Decoder",
+      category: "full-stack",
+      status: "Full-Stack Project",
+      description: "An AI-powered food label decoder that OCR-scans ingredients and produces plain-English insights on additives, allergens, and ultra-processed scores.",
+      features: [
+        "OCR scans ingredient labels with Google Cloud Vision",
+        "Explains additives and allergens in plain English",
+        "Combines Open Food Facts data with AI-generated insights"
+      ],
+      technologies: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Google Cloud Vision", "OpenAI API"],
+      achievements: ["AI integration", "OCR pipeline", "Full-stack build"],
+      links: [
+        { name: "GitHub", url: "https://github.com/tithishah21/LabelTruth", icon: Github }
+      ],
+      highlights: ["Full-Stack", "AI"]
+    },
+    {
+      title: "Privacy Implications of GenAI",
+      subtitle: "GenAI Privacy & PII Protection Pipeline",
+      category: "ai-ml",
+      status: "AI/ML Project",
+      description: "An end-to-end GenAI privacy pipeline that detects training-data leakage and reduces PII exposure through sanitisation and output filtering.",
+      features: [
+        "Detects training-data leakage in generative-model outputs",
+        "Sanitises PII and filters generated responses",
+        "Achieved 92% lower measured leakage"
+      ],
+      technologies: ["Python", "PyTorch", "Hugging Face Transformers", "GPT-2", "Scikit-learn", "Pandas", "Regex"],
+      achievements: ["92% lower leakage", "Privacy engineering", "AI/ML"],
+      links: [
+        { name: "GitHub", url: "https://github.com/tithishah21/Privacy-Implications-of-GenAI", icon: Github }
+      ],
+      highlights: ["AI/ML", "Backend"]
+    },
+    {
+      title: "FinSim",
+      subtitle: "GTA for Personal Finance",
+      category: "full-stack",
+      status: "Full-Stack Project",
+      description: "A 30-year personal-finance simulation where an AI agent navigates salaries, expenses, investments, loans, emergencies, and alternate futures.",
+      features: [
+        "Models long-term personal-finance decisions and life events",
+        "Uses Monte Carlo simulation to explore alternate futures",
+        "Pairs AI-agent simulation with an interactive web experience"
+      ],
+      technologies: ["Python", "PyTorch", "Stable-Baselines3", "Monte Carlo Simulation", "Next.js", "LLMs"],
+      achievements: ["AI agent", "Simulation modeling", "Full-stack build"],
+      links: [],
+      highlights: ["Full-Stack", "AI/ML"]
+    },
     {
       title: "ResumeBuilderPro",
       subtitle: "AI-Powered Resume Creation Platform",
@@ -105,18 +157,17 @@ const Projects = () => {
       title: "Builder Brews",
       subtitle: "Coffee Shop Application",
       category: "full-stack",
-      status: "JPMC Intern AI Challenge Team Project",
-      description: "Full end-to-end coffee shop application built as a team project during JPMorgan Chase's intern AI challenge hackathon.",
+      status: "JPMC Intern AI Challenge",
+      description: "An end-to-end coffee shop application co-developed during JPMorgan Chase's intern AI challenge hackathon.",
       features: [
-        "Built the application as a collaborative intern hackathon project",
-        "Delivered an end-to-end full-stack experience for coffee shop workflows",
+        "Built a complete coffee-shop workflow experience",
         "Implemented frontend flows in React and JavaScript",
         "Used testing practices and SQLite-backed data persistence"
       ],
       technologies: ["React", "JavaScript", "Testing", "SQLite"],
-      achievements: ["Team project", "Full-stack hackathon build", "JPMC intern AI challenge"],
+      achievements: ["Intern AI challenge", "Full-stack build"],
       links: [],
-      highlights: ["Team Project", "Hackathon", "Full-Stack"]
+      highlights: ["Hackathon", "Full-Stack"]
     },
     {
       title: "PrepMate",
@@ -255,10 +306,10 @@ const Projects = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   const stats = [
-    { label: "Total Projects", value: "13", icon: Code },
+    { label: "Total Projects", value: "16+", icon: Code },
     { label: "Technologies", value: "20+", icon: Zap },
     { label: "Hackathon Wins", value: "1", icon: Award },
-    { label: "Team Projects", value: "8+", icon: Users }
+    { label: "AWS Certified", value: "981/1000", icon: Award }
   ];
 
   return (

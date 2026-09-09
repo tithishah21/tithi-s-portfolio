@@ -1,26 +1,26 @@
-import { Briefcase, GraduationCap, Trophy, UserCheck, Terminal } from 'lucide-react';
+import { Award, Briefcase, GraduationCap, Trophy, Terminal } from 'lucide-react';
 
 const About = () => {
   const skills = [
     {
       category: "Frontend",
-      items: ["React.js", "React DOM", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Bootstrap", "HTML5", "CSS", "CSS Grid", "CSS Flexbox", "Formik", "Zustand"]
+      items: ["React.js", "React DOM", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Bootstrap", "HTML5/CSS", "Formik", "Zustand"]
     },
     {
       category: "Backend & Data",
-      items: ["Node.js", "Express.js", "Java", "Spring Boot", "Supabase", "MySQL", "Oracle SQL", "PostgreSQL", "DBMS", "SQL", "Apache Spark"]
+      items: ["Node.js", "Express.js", "Java", "Spring Boot", "Supabase", "Firebase", "MySQL", "Oracle SQL", "PostgreSQL", "Prisma ORM", "REST APIs", "JWT Auth"]
     },
     {
       category: "AI / ML",
-      items: ["Machine Learning", "Artificial Intelligence", "TensorFlow", "Scikit-Learn", "MLflow", "Big Data Systems"]
+      items: ["Machine Learning", "Prompt Engineering", "PyTorch", "TensorFlow", "Scikit-learn", "NumPy", "Pandas", "Stable-Baselines3", "MLflow"]
     },
     {
       category: "Cloud & Tools",
-      items: ["Amazon Web Services (AWS)", "Cloud Computing", "Kubernetes", "Docker", "Autosys", "Git", "GitHub", "Vercel", "ESLint", "Packet Tracer"]
+      items: ["AWS", "Kubernetes", "Docker", "Big Data Tools", "Git", "GitHub", "Vercel", "ESLint"]
     },
     {
       category: "Core CS",
-      items: ["C++", "C", "Python", "Data Structures & Algorithms", "Operating Systems", "Computer Networks", "Object-Oriented Programming", "Full-Stack Development"]
+      items: ["C/C++", "Python", "Data Structures & Algorithms", "Operating Systems", "Compiler Design", "Computer Networks", "Competitive Coding", "Agile/Scrum"]
     }
   ];
 
@@ -51,9 +51,9 @@ const About = () => {
       description: "Final year B.Tech Computer Science Engineering (Core) student at VIT Vellore with a CGPA of 9.04."
     },
     {
-      icon: UserCheck,
-      title: "Prompt Engineering Workshop Facilitator",
-      description: "Conducted a workshop at IEEE Computer Society, VIT Vellore on zero-shot, few-shot, and chain-of-thought prompting with real-world developer tooling and responsible AI usage."
+      icon: Award,
+      title: "AWS Certified Cloud Practitioner",
+      description: "AWS Certified Cloud Practitioner with a score of 981/1000, validating foundational cloud, security, billing, and architectural knowledge."
     }
   ];
 
